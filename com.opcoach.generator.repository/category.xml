@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.opcoach.generator.feature_1.0.0.qualifier.jar" id="com.opcoach.generator.feature" version="1.0.0.qualifier">
+      <category name="com.opcoach.generator"/>
+   </feature>
+   <category-def name="com.opcoach.generator" label="generator"/>
+</site>

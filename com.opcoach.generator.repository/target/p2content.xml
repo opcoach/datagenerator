@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='201704152013.com.opcoach.generator' version='1.0.0.2--cL27nh7735G3A5C7359'>
+    <properties size='2'>
+      <property name='org.eclipse.equinox.p2.name' value='generator'/>
+      <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201704152013.com.opcoach.generator' version='1.0.0.2--cL27nh7735G3A5C7359'/>
+    </provides>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='com.opcoach.generator.feature.feature.group' range='[1.0.0.201704152013,1.0.0.201704152013]'/>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+  </unit>
+</units>
