@@ -13,10 +13,10 @@ import java.util.Date;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.basic.MDateGenerator#isGenerateNow <em>Generate Now</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.basic.MBasicPackage#getDateGenerator()
  * @model superTypes="com.opcoach.generator.RangeGenerator&lt;org.eclipse.emf.ecore.EDate&gt;"

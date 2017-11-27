@@ -111,9 +111,9 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public <T> MReferenceGenerator<T> createReferenceGenerator()
+	public <T> ReferenceGenerator<T> createReferenceGenerator()
 	{
-		MReferenceGeneratorImpl<T> referenceGenerator = new MReferenceGeneratorImpl<T>();
+		ReferenceGeneratorImpl<T> referenceGenerator = new ReferenceGeneratorImpl<T>();
 		return referenceGenerator;
 	}
 

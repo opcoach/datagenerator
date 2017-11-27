@@ -71,20 +71,20 @@ public class GeneratorSwitch<T1> extends Switch<T1>
 	{
 		switch (classifierID) {
 			case MGeneratorPackage.VALUE_GENERATOR: {
-				MValueGenerator<?> valueGenerator = (MValueGenerator<?>)theEObject;
+				ValueGenerator<?> valueGenerator = (ValueGenerator<?>)theEObject;
 				T1 result = caseValueGenerator(valueGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case MGeneratorPackage.RANGE_GENERATOR: {
-				MRangeGenerator<?> rangeGenerator = (MRangeGenerator<?>)theEObject;
+				RangeGenerator<?> rangeGenerator = (RangeGenerator<?>)theEObject;
 				T1 result = caseRangeGenerator(rangeGenerator);
 				if (result == null) result = caseValueGenerator(rangeGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case MGeneratorPackage.REFERENCE_GENERATOR: {
-				MReferenceGenerator<?> referenceGenerator = (MReferenceGenerator<?>)theEObject;
+				ReferenceGenerator<?> referenceGenerator = (ReferenceGenerator<?>)theEObject;
 				T1 result = caseReferenceGenerator(referenceGenerator);
 				if (result == null) result = caseValueGenerator(referenceGenerator);
 				if (result == null) result = defaultCase(theEObject);
@@ -105,8 +105,7 @@ public class GeneratorSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseValueGenerator(MValueGenerator<T> object)
-	{
+	public <T> T1 caseValueGenerator(ValueGenerator<T> object) {
 		return null;
 	}
 
@@ -121,8 +120,7 @@ public class GeneratorSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseRangeGenerator(MRangeGenerator<T> object)
-	{
+	public <T> T1 caseRangeGenerator(RangeGenerator<T> object) {
 		return null;
 	}
 
@@ -137,8 +135,7 @@ public class GeneratorSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseReferenceGenerator(MReferenceGenerator<T> object)
-	{
+	public <T> T1 caseReferenceGenerator(ReferenceGenerator<T> object) {
 		return null;
 	}
 

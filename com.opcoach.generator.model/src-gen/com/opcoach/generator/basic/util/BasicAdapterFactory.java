@@ -6,6 +6,9 @@ import com.opcoach.generator.MRangeGenerator;
 import com.opcoach.generator.MReferenceGenerator;
 import com.opcoach.generator.MValueGenerator;
 
+import com.opcoach.generator.RangeGenerator;
+import com.opcoach.generator.ReferenceGenerator;
+import com.opcoach.generator.ValueGenerator;
 import com.opcoach.generator.basic.*;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -75,59 +78,59 @@ public class BasicAdapterFactory extends AdapterFactoryImpl
 	protected BasicSwitch<Adapter> modelSwitch =
 		new BasicSwitch<Adapter>() {
 			@Override
-			public Adapter caseBooleanGenerator(MBooleanGenerator object) {
+			public Adapter caseBooleanGenerator(BooleanGenerator object) {
 				return createBooleanGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseDateGenerator(MDateGenerator object) {
+			public Adapter caseDateGenerator(DateGenerator object) {
 				return createDateGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseDoubleGenerator(MDoubleGenerator object) {
+			public Adapter caseDoubleGenerator(DoubleGenerator object) {
 				return createDoubleGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseFloatGenerator(MFloatGenerator object) {
+			public Adapter caseFloatGenerator(FloatGenerator object) {
 				return createFloatGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseIDGenerator(MIDGenerator object) {
+			public Adapter caseIDGenerator(IDGenerator object) {
 				return createIDGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseIntGenerator(MIntGenerator object) {
+			public Adapter caseIntGenerator(IntGenerator object) {
 				return createIntGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseLongGenerator(MLongGenerator object) {
+			public Adapter caseLongGenerator(LongGenerator object) {
 				return createLongGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseNullValueGenerator(MNullValueGenerator object) {
+			public Adapter caseNullValueGenerator(NullValueGenerator object) {
 				return createNullValueGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseStringGenerator(MStringGenerator object) {
+			public Adapter caseStringGenerator(StringGenerator object) {
 				return createStringGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseTrueGenerator(MTrueGenerator object) {
+			public Adapter caseTrueGenerator(TrueGenerator object) {
 				return createTrueGeneratorAdapter();
 			}
 			@Override
-			public Adapter caseFalseGenerator(MFalseGenerator object) {
+			public Adapter caseFalseGenerator(FalseGenerator object) {
 				return createFalseGeneratorAdapter();
 			}
 			@Override
-			public <T> Adapter caseValueGenerator(MValueGenerator<T> object) {
+			public <T> Adapter caseValueGenerator(ValueGenerator<T> object) {
 				return createValueGeneratorAdapter();
 			}
 			@Override
-			public <T> Adapter caseRangeGenerator(MRangeGenerator<T> object) {
+			public <T> Adapter caseRangeGenerator(RangeGenerator<T> object) {
 				return createRangeGeneratorAdapter();
 			}
 			@Override
-			public <T> Adapter caseReferenceGenerator(MReferenceGenerator<T> object) {
+			public <T> Adapter caseReferenceGenerator(ReferenceGenerator<T> object) {
 				return createReferenceGeneratorAdapter();
 			}
 			@Override

@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.impl.MRangeGeneratorImpl#getLow <em>Low</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MRangeGeneratorImpl#getHigh <em>High</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MRangeGeneratorImpl#getStep <em>Step</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -155,7 +155,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	{
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException(); 
+		throw new UnsupportedOperationException();
 	}
 
 	/**

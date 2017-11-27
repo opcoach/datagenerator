@@ -29,7 +29,7 @@ public interface MGeneratorFactory extends EFactory
 	 * @return a new object of class '<em>Reference Generator</em>'.
 	 * @generated
 	 */
-	<T> MReferenceGenerator<T> createReferenceGenerator();
+	<T> ReferenceGenerator<T> createReferenceGenerator();
 
 	/**
 	 * Returns the package supported by this factory.

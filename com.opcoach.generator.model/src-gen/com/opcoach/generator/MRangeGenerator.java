@@ -10,12 +10,12 @@ package com.opcoach.generator;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.MRangeGenerator#getLow <em>Low</em>}</li>
  *   <li>{@link com.opcoach.generator.MRangeGenerator#getHigh <em>High</em>}</li>
  *   <li>{@link com.opcoach.generator.MRangeGenerator#getStep <em>Step</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.MGeneratorPackage#getRangeGenerator()
  * @model abstract="true"

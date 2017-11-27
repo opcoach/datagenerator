@@ -4,7 +4,15 @@ package com.opcoach.generator.basic.impl;
 
 import com.opcoach.generator.MGeneratorPackage;
 
+import com.opcoach.generator.basic.BooleanGenerator;
 import com.opcoach.generator.basic.CasePolicyType;
+import com.opcoach.generator.basic.DateGenerator;
+import com.opcoach.generator.basic.DoubleGenerator;
+import com.opcoach.generator.basic.FalseGenerator;
+import com.opcoach.generator.basic.FloatGenerator;
+import com.opcoach.generator.basic.IDGenerator;
+import com.opcoach.generator.basic.IntGenerator;
+import com.opcoach.generator.basic.LongGenerator;
 import com.opcoach.generator.basic.MBasicFactory;
 import com.opcoach.generator.basic.MBasicPackage;
 import com.opcoach.generator.basic.MBooleanGenerator;
@@ -19,6 +27,9 @@ import com.opcoach.generator.basic.MNullValueGenerator;
 import com.opcoach.generator.basic.MStringGenerator;
 import com.opcoach.generator.basic.MTrueGenerator;
 
+import com.opcoach.generator.basic.NullValueGenerator;
+import com.opcoach.generator.basic.StringGenerator;
+import com.opcoach.generator.basic.TrueGenerator;
 import com.opcoach.generator.impl.MGeneratorPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -492,32 +503,32 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 		falseGeneratorEClass.getESuperTypes().add(this.getBooleanGenerator());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(booleanGeneratorEClass, MBooleanGenerator.class, "BooleanGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(booleanGeneratorEClass, BooleanGenerator.class, "BooleanGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(dateGeneratorEClass, MDateGenerator.class, "DateGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDateGenerator_GenerateNow(), ecorePackage.getEBoolean(), "generateNow", null, 0, 1, MDateGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(dateGeneratorEClass, DateGenerator.class, "DateGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDateGenerator_GenerateNow(), ecorePackage.getEBoolean(), "generateNow", null, 0, 1, DateGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(doubleGeneratorEClass, MDoubleGenerator.class, "DoubleGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(doubleGeneratorEClass, DoubleGenerator.class, "DoubleGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(floatGeneratorEClass, MFloatGenerator.class, "FloatGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(floatGeneratorEClass, FloatGenerator.class, "FloatGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(idGeneratorEClass, MIDGenerator.class, "IDGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getIDGenerator_KeyLength(), ecorePackage.getEInt(), "keyLength", "10", 0, 1, MIDGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getIDGenerator_Prefix(), ecorePackage.getEString(), "prefix", null, 0, 1, MIDGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(idGeneratorEClass, IDGenerator.class, "IDGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getIDGenerator_KeyLength(), ecorePackage.getEInt(), "keyLength", "10", 0, 1, IDGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getIDGenerator_Prefix(), ecorePackage.getEString(), "prefix", null, 0, 1, IDGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(intGeneratorEClass, MIntGenerator.class, "IntGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(intGeneratorEClass, IntGenerator.class, "IntGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(longGeneratorEClass, MLongGenerator.class, "LongGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(longGeneratorEClass, LongGenerator.class, "LongGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(nullValueGeneratorEClass, MNullValueGenerator.class, "NullValueGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(nullValueGeneratorEClass, NullValueGenerator.class, "NullValueGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(stringGeneratorEClass, MStringGenerator.class, "StringGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getStringGenerator_DataFilename(), ecorePackage.getEString(), "dataFilename", null, 0, 1, MStringGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStringGenerator_CasePolicy(), this.getCasePolicyType(), "casePolicy", "DEFAULT", 0, 1, MStringGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(stringGeneratorEClass, StringGenerator.class, "StringGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStringGenerator_DataFilename(), ecorePackage.getEString(), "dataFilename", null, 0, 1, StringGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStringGenerator_CasePolicy(), this.getCasePolicyType(), "casePolicy", "DEFAULT", 0, 1, StringGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(trueGeneratorEClass, MTrueGenerator.class, "TrueGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(trueGeneratorEClass, TrueGenerator.class, "TrueGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(falseGeneratorEClass, MFalseGenerator.class, "FalseGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(falseGeneratorEClass, FalseGenerator.class, "FalseGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Initialize enums and add enum literals
 		initEEnum(casePolicyTypeEEnum, CasePolicyType.class, "CasePolicyType");

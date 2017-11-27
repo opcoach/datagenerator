@@ -29,7 +29,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Boolean Generator</em>'.
 	 * @generated
 	 */
-	MBooleanGenerator createBooleanGenerator();
+	BooleanGenerator createBooleanGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Date Generator</em>'.
@@ -38,7 +38,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Date Generator</em>'.
 	 * @generated
 	 */
-	MDateGenerator createDateGenerator();
+	DateGenerator createDateGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Double Generator</em>'.
@@ -47,7 +47,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Double Generator</em>'.
 	 * @generated
 	 */
-	MDoubleGenerator createDoubleGenerator();
+	DoubleGenerator createDoubleGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Float Generator</em>'.
@@ -56,7 +56,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Float Generator</em>'.
 	 * @generated
 	 */
-	MFloatGenerator createFloatGenerator();
+	FloatGenerator createFloatGenerator();
 
 	/**
 	 * Returns a new object of class '<em>ID Generator</em>'.
@@ -65,7 +65,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>ID Generator</em>'.
 	 * @generated
 	 */
-	MIDGenerator createIDGenerator();
+	IDGenerator createIDGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Int Generator</em>'.
@@ -74,7 +74,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Int Generator</em>'.
 	 * @generated
 	 */
-	MIntGenerator createIntGenerator();
+	IntGenerator createIntGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Long Generator</em>'.
@@ -83,7 +83,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Long Generator</em>'.
 	 * @generated
 	 */
-	MLongGenerator createLongGenerator();
+	LongGenerator createLongGenerator();
 
 	/**
 	 * Returns a new object of class '<em>Null Value Generator</em>'.
@@ -92,7 +92,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>Null Value Generator</em>'.
 	 * @generated
 	 */
-	MNullValueGenerator createNullValueGenerator();
+	NullValueGenerator createNullValueGenerator();
 
 	/**
 	 * Returns a new object of class '<em>String Generator</em>'.
@@ -101,7 +101,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>String Generator</em>'.
 	 * @generated
 	 */
-	MStringGenerator createStringGenerator();
+	StringGenerator createStringGenerator();
 
 	/**
 	 * Returns a new object of class '<em>True Generator</em>'.
@@ -110,7 +110,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>True Generator</em>'.
 	 * @generated
 	 */
-	MTrueGenerator createTrueGenerator();
+	TrueGenerator createTrueGenerator();
 
 	/**
 	 * Returns a new object of class '<em>False Generator</em>'.
@@ -119,7 +119,7 @@ public interface MBasicFactory extends EFactory
 	 * @return a new object of class '<em>False Generator</em>'.
 	 * @generated
 	 */
-	MFalseGenerator createFalseGenerator();
+	FalseGenerator createFalseGenerator();
 
 	/**
 	 * Returns the package supported by this factory.

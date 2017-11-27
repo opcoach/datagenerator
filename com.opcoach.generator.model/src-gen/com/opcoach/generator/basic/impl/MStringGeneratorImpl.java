@@ -17,11 +17,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.basic.impl.MStringGeneratorImpl#getDataFilename <em>Data Filename</em>}</li>
  *   <li>{@link com.opcoach.generator.basic.impl.MStringGeneratorImpl#getCasePolicy <em>Case Policy</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

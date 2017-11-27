@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getBadValueProportion <em>Bad Value Proportion</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getBadValueGenerator <em>Bad Value Generator</em>}</li>
@@ -27,7 +28,6 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getLocale <em>Locale</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -386,7 +386,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	{
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException(); 
+		throw new UnsupportedOperationException();
 	}
 
 	/**

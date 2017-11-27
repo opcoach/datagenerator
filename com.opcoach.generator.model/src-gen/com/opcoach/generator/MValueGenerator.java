@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getBadValueProportion <em>Bad Value Proportion</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getBadValueGenerator <em>Bad Value Generator</em>}</li>
@@ -22,7 +23,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.opcoach.generator.MValueGenerator#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getLocale <em>Locale</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator()
  * @model abstract="true"
@@ -67,7 +67,7 @@ public interface MValueGenerator<T> extends EObject
 	 * This generator must be set if the badValueProportion is defined (> 0)
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Bad Value Generator</em>' reference.
-	 * @see #setBadValueGenerator(MValueGenerator)
+	 * @see #setBadValueGenerator(ValueGenerator)
 	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_BadValueGenerator()
 	 * @model
 	 * @generated

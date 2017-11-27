@@ -71,15 +71,15 @@ public class GeneratorAdapterFactory extends AdapterFactoryImpl
 	protected GeneratorSwitch<Adapter> modelSwitch =
 		new GeneratorSwitch<Adapter>() {
 			@Override
-			public <T> Adapter caseValueGenerator(MValueGenerator<T> object) {
+			public <T> Adapter caseValueGenerator(ValueGenerator<T> object) {
 				return createValueGeneratorAdapter();
 			}
 			@Override
-			public <T> Adapter caseRangeGenerator(MRangeGenerator<T> object) {
+			public <T> Adapter caseRangeGenerator(RangeGenerator<T> object) {
 				return createRangeGeneratorAdapter();
 			}
 			@Override
-			public <T> Adapter caseReferenceGenerator(MReferenceGenerator<T> object) {
+			public <T> Adapter caseReferenceGenerator(ReferenceGenerator<T> object) {
 				return createReferenceGeneratorAdapter();
 			}
 			@Override

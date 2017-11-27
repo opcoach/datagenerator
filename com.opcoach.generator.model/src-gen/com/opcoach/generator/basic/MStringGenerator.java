@@ -12,11 +12,11 @@ import com.opcoach.generator.ReferenceGenerator;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.basic.MStringGenerator#getDataFilename <em>Data Filename</em>}</li>
  *   <li>{@link com.opcoach.generator.basic.MStringGenerator#getCasePolicy <em>Case Policy</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.basic.MBasicPackage#getStringGenerator()
  * @model superTypes="com.opcoach.generator.ReferenceGenerator&lt;org.eclipse.emf.ecore.EString&gt;"

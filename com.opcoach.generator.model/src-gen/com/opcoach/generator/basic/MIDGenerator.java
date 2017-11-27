@@ -12,11 +12,11 @@ import com.opcoach.generator.ValueGenerator;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.basic.MIDGenerator#getKeyLength <em>Key Length</em>}</li>
  *   <li>{@link com.opcoach.generator.basic.MIDGenerator#getPrefix <em>Prefix</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.basic.MBasicPackage#getIDGenerator()
  * @model superTypes="com.opcoach.generator.ValueGenerator&lt;org.eclipse.emf.ecore.EString&gt;"

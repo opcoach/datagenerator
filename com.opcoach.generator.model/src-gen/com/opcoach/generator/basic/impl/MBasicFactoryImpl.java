@@ -114,9 +114,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MBooleanGenerator createBooleanGenerator()
+	public BooleanGenerator createBooleanGenerator()
 	{
-		MBooleanGeneratorImpl booleanGenerator = new MBooleanGeneratorImpl();
+		BooleanGeneratorImpl booleanGenerator = new BooleanGeneratorImpl();
 		return booleanGenerator;
 	}
 
@@ -125,9 +125,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDateGenerator createDateGenerator()
+	public DateGenerator createDateGenerator()
 	{
-		MDateGeneratorImpl dateGenerator = new MDateGeneratorImpl();
+		DateGeneratorImpl dateGenerator = new DateGeneratorImpl();
 		return dateGenerator;
 	}
 
@@ -136,9 +136,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MDoubleGenerator createDoubleGenerator()
+	public DoubleGenerator createDoubleGenerator()
 	{
-		MDoubleGeneratorImpl doubleGenerator = new MDoubleGeneratorImpl();
+		DoubleGeneratorImpl doubleGenerator = new DoubleGeneratorImpl();
 		return doubleGenerator;
 	}
 
@@ -147,9 +147,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MFloatGenerator createFloatGenerator()
+	public FloatGenerator createFloatGenerator()
 	{
-		MFloatGeneratorImpl floatGenerator = new MFloatGeneratorImpl();
+		FloatGeneratorImpl floatGenerator = new FloatGeneratorImpl();
 		return floatGenerator;
 	}
 
@@ -158,9 +158,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MIDGenerator createIDGenerator()
+	public IDGenerator createIDGenerator()
 	{
-		MIDGeneratorImpl idGenerator = new MIDGeneratorImpl();
+		IDGeneratorImpl idGenerator = new IDGeneratorImpl();
 		return idGenerator;
 	}
 
@@ -169,9 +169,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MIntGenerator createIntGenerator()
+	public IntGenerator createIntGenerator()
 	{
-		MIntGeneratorImpl intGenerator = new MIntGeneratorImpl();
+		IntGeneratorImpl intGenerator = new IntGeneratorImpl();
 		return intGenerator;
 	}
 
@@ -180,9 +180,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MLongGenerator createLongGenerator()
+	public LongGenerator createLongGenerator()
 	{
-		MLongGeneratorImpl longGenerator = new MLongGeneratorImpl();
+		LongGeneratorImpl longGenerator = new LongGeneratorImpl();
 		return longGenerator;
 	}
 
@@ -191,9 +191,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MNullValueGenerator createNullValueGenerator()
+	public NullValueGenerator createNullValueGenerator()
 	{
-		MNullValueGeneratorImpl nullValueGenerator = new MNullValueGeneratorImpl();
+		NullValueGeneratorImpl nullValueGenerator = new NullValueGeneratorImpl();
 		return nullValueGenerator;
 	}
 
@@ -202,9 +202,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MStringGenerator createStringGenerator()
+	public StringGenerator createStringGenerator()
 	{
-		MStringGeneratorImpl stringGenerator = new MStringGeneratorImpl();
+		StringGeneratorImpl stringGenerator = new StringGeneratorImpl();
 		return stringGenerator;
 	}
 
@@ -213,9 +213,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MTrueGenerator createTrueGenerator()
+	public TrueGenerator createTrueGenerator()
 	{
-		MTrueGeneratorImpl trueGenerator = new MTrueGeneratorImpl();
+		TrueGeneratorImpl trueGenerator = new TrueGeneratorImpl();
 		return trueGenerator;
 	}
 
@@ -224,9 +224,9 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MFalseGenerator createFalseGenerator()
+	public FalseGenerator createFalseGenerator()
 	{
-		MFalseGeneratorImpl falseGenerator = new MFalseGeneratorImpl();
+		FalseGeneratorImpl falseGenerator = new FalseGeneratorImpl();
 		return falseGenerator;
 	}
 

@@ -6,6 +6,9 @@ import com.opcoach.generator.MRangeGenerator;
 import com.opcoach.generator.MReferenceGenerator;
 import com.opcoach.generator.MValueGenerator;
 
+import com.opcoach.generator.RangeGenerator;
+import com.opcoach.generator.ReferenceGenerator;
+import com.opcoach.generator.ValueGenerator;
 import com.opcoach.generator.basic.*;
 
 import org.eclipse.emf.ecore.EObject;
@@ -75,14 +78,14 @@ public class BasicSwitch<T1> extends Switch<T1>
 	{
 		switch (classifierID) {
 			case MBasicPackage.BOOLEAN_GENERATOR: {
-				MBooleanGenerator booleanGenerator = (MBooleanGenerator)theEObject;
+				BooleanGenerator booleanGenerator = (BooleanGenerator)theEObject;
 				T1 result = caseBooleanGenerator(booleanGenerator);
 				if (result == null) result = caseValueGenerator(booleanGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case MBasicPackage.DATE_GENERATOR: {
-				MDateGenerator dateGenerator = (MDateGenerator)theEObject;
+				DateGenerator dateGenerator = (DateGenerator)theEObject;
 				T1 result = caseDateGenerator(dateGenerator);
 				if (result == null) result = caseRangeGenerator(dateGenerator);
 				if (result == null) result = caseValueGenerator(dateGenerator);
@@ -90,7 +93,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.DOUBLE_GENERATOR: {
-				MDoubleGenerator doubleGenerator = (MDoubleGenerator)theEObject;
+				DoubleGenerator doubleGenerator = (DoubleGenerator)theEObject;
 				T1 result = caseDoubleGenerator(doubleGenerator);
 				if (result == null) result = caseRangeGenerator(doubleGenerator);
 				if (result == null) result = caseValueGenerator(doubleGenerator);
@@ -98,7 +101,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.FLOAT_GENERATOR: {
-				MFloatGenerator floatGenerator = (MFloatGenerator)theEObject;
+				FloatGenerator floatGenerator = (FloatGenerator)theEObject;
 				T1 result = caseFloatGenerator(floatGenerator);
 				if (result == null) result = caseRangeGenerator(floatGenerator);
 				if (result == null) result = caseValueGenerator(floatGenerator);
@@ -106,14 +109,14 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.ID_GENERATOR: {
-				MIDGenerator idGenerator = (MIDGenerator)theEObject;
+				IDGenerator idGenerator = (IDGenerator)theEObject;
 				T1 result = caseIDGenerator(idGenerator);
 				if (result == null) result = caseValueGenerator(idGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case MBasicPackage.INT_GENERATOR: {
-				MIntGenerator intGenerator = (MIntGenerator)theEObject;
+				IntGenerator intGenerator = (IntGenerator)theEObject;
 				T1 result = caseIntGenerator(intGenerator);
 				if (result == null) result = caseRangeGenerator(intGenerator);
 				if (result == null) result = caseValueGenerator(intGenerator);
@@ -121,7 +124,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.LONG_GENERATOR: {
-				MLongGenerator longGenerator = (MLongGenerator)theEObject;
+				LongGenerator longGenerator = (LongGenerator)theEObject;
 				T1 result = caseLongGenerator(longGenerator);
 				if (result == null) result = caseRangeGenerator(longGenerator);
 				if (result == null) result = caseValueGenerator(longGenerator);
@@ -129,14 +132,14 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.NULL_VALUE_GENERATOR: {
-				MNullValueGenerator nullValueGenerator = (MNullValueGenerator)theEObject;
+				NullValueGenerator nullValueGenerator = (NullValueGenerator)theEObject;
 				T1 result = caseNullValueGenerator(nullValueGenerator);
 				if (result == null) result = caseValueGenerator(nullValueGenerator);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case MBasicPackage.STRING_GENERATOR: {
-				MStringGenerator stringGenerator = (MStringGenerator)theEObject;
+				StringGenerator stringGenerator = (StringGenerator)theEObject;
 				T1 result = caseStringGenerator(stringGenerator);
 				if (result == null) result = caseReferenceGenerator(stringGenerator);
 				if (result == null) result = caseValueGenerator(stringGenerator);
@@ -144,7 +147,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.TRUE_GENERATOR: {
-				MTrueGenerator trueGenerator = (MTrueGenerator)theEObject;
+				TrueGenerator trueGenerator = (TrueGenerator)theEObject;
 				T1 result = caseTrueGenerator(trueGenerator);
 				if (result == null) result = caseBooleanGenerator(trueGenerator);
 				if (result == null) result = caseValueGenerator(trueGenerator);
@@ -152,7 +155,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 				return result;
 			}
 			case MBasicPackage.FALSE_GENERATOR: {
-				MFalseGenerator falseGenerator = (MFalseGenerator)theEObject;
+				FalseGenerator falseGenerator = (FalseGenerator)theEObject;
 				T1 result = caseFalseGenerator(falseGenerator);
 				if (result == null) result = caseBooleanGenerator(falseGenerator);
 				if (result == null) result = caseValueGenerator(falseGenerator);
@@ -174,8 +177,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseBooleanGenerator(MBooleanGenerator object)
-	{
+	public T1 caseBooleanGenerator(BooleanGenerator object) {
 		return null;
 	}
 
@@ -190,8 +192,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseDateGenerator(MDateGenerator object)
-	{
+	public T1 caseDateGenerator(DateGenerator object) {
 		return null;
 	}
 
@@ -206,8 +207,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseDoubleGenerator(MDoubleGenerator object)
-	{
+	public T1 caseDoubleGenerator(DoubleGenerator object) {
 		return null;
 	}
 
@@ -222,8 +222,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseFloatGenerator(MFloatGenerator object)
-	{
+	public T1 caseFloatGenerator(FloatGenerator object) {
 		return null;
 	}
 
@@ -238,8 +237,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseIDGenerator(MIDGenerator object)
-	{
+	public T1 caseIDGenerator(IDGenerator object) {
 		return null;
 	}
 
@@ -254,8 +252,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseIntGenerator(MIntGenerator object)
-	{
+	public T1 caseIntGenerator(IntGenerator object) {
 		return null;
 	}
 
@@ -270,8 +267,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseLongGenerator(MLongGenerator object)
-	{
+	public T1 caseLongGenerator(LongGenerator object) {
 		return null;
 	}
 
@@ -286,8 +282,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseNullValueGenerator(MNullValueGenerator object)
-	{
+	public T1 caseNullValueGenerator(NullValueGenerator object) {
 		return null;
 	}
 
@@ -302,8 +297,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseStringGenerator(MStringGenerator object)
-	{
+	public T1 caseStringGenerator(StringGenerator object) {
 		return null;
 	}
 
@@ -318,8 +312,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseTrueGenerator(MTrueGenerator object)
-	{
+	public T1 caseTrueGenerator(TrueGenerator object) {
 		return null;
 	}
 
@@ -334,8 +327,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T1 caseFalseGenerator(MFalseGenerator object)
-	{
+	public T1 caseFalseGenerator(FalseGenerator object) {
 		return null;
 	}
 
@@ -350,8 +342,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseValueGenerator(MValueGenerator<T> object)
-	{
+	public <T> T1 caseValueGenerator(ValueGenerator<T> object) {
 		return null;
 	}
 
@@ -366,8 +357,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseRangeGenerator(MRangeGenerator<T> object)
-	{
+	public <T> T1 caseRangeGenerator(RangeGenerator<T> object) {
 		return null;
 	}
 
@@ -382,8 +372,7 @@ public class BasicSwitch<T1> extends Switch<T1>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public <T> T1 caseReferenceGenerator(MReferenceGenerator<T> object)
-	{
+	public <T> T1 caseReferenceGenerator(ReferenceGenerator<T> object) {
 		return null;
 	}
 

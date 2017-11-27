@@ -12,11 +12,11 @@ import java.util.Collection;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link com.opcoach.generator.MReferenceGenerator#getStep <em>Step</em>}</li>
  *   <li>{@link com.opcoach.generator.MReferenceGenerator#getValues <em>Values</em>}</li>
  * </ul>
- * </p>
  *
  * @see com.opcoach.generator.MGeneratorPackage#getReferenceGenerator()
  * @model
