@@ -2,19 +2,6 @@
  */
 package com.opcoach.generator.impl;
 
-import com.opcoach.generator.MGeneratorFactory;
-import com.opcoach.generator.MGeneratorPackage;
-import com.opcoach.generator.MRangeGenerator;
-import com.opcoach.generator.MReferenceGenerator;
-import com.opcoach.generator.MValueGenerator;
-
-import com.opcoach.generator.RangeGenerator;
-import com.opcoach.generator.ReferenceGenerator;
-import com.opcoach.generator.ValueGenerator;
-import com.opcoach.generator.basic.MBasicPackage;
-
-import com.opcoach.generator.basic.impl.MBasicPackageImpl;
-
 import java.util.Collection;
 import java.util.Locale;
 
@@ -26,8 +13,16 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.ETypeParameter;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import com.opcoach.generator.GeneratorPackage;
+import com.opcoach.generator.MGeneratorFactory;
+import com.opcoach.generator.MGeneratorPackage;
+import com.opcoach.generator.RangeGenerator;
+import com.opcoach.generator.ReferenceGenerator;
+import com.opcoach.generator.ValueGenerator;
+import com.opcoach.generator.basic.MBasicPackage;
+import com.opcoach.generator.basic.impl.MBasicPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
