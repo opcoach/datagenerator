@@ -161,7 +161,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link MBasicPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -176,12 +176,14 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 		if (isInited) return (MBasicPackage)EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI);
 
 		// Obtain or create and register package
-		MBasicPackageImpl theBasicPackage = (MBasicPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof MBasicPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new MBasicPackageImpl());
+		Object registeredBasicPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		MBasicPackageImpl theBasicPackage = registeredBasicPackage instanceof MBasicPackageImpl ? (MBasicPackageImpl)registeredBasicPackage : new MBasicPackageImpl();
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		MGeneratorPackageImpl theGeneratorPackage = (MGeneratorPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(MGeneratorPackage.eNS_URI) instanceof MGeneratorPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(MGeneratorPackage.eNS_URI) : MGeneratorPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MGeneratorPackage.eNS_URI);
+		MGeneratorPackageImpl theGeneratorPackage = (MGeneratorPackageImpl)(registeredPackage instanceof MGeneratorPackageImpl ? registeredPackage : MGeneratorPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBasicPackage.createPackageContents();
@@ -194,7 +196,6 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 		// Mark meta-data to indicate it can't be changed
 		theBasicPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(MBasicPackage.eNS_URI, theBasicPackage);
 		return theBasicPackage;

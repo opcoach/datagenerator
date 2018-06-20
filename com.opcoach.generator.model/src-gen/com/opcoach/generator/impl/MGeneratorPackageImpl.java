@@ -96,7 +96,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link MGeneratorPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -111,12 +111,14 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		if (isInited) return (MGeneratorPackage)EPackage.Registry.INSTANCE.getEPackage(MGeneratorPackage.eNS_URI);
 
 		// Obtain or create and register package
-		MGeneratorPackageImpl theGeneratorPackage = (MGeneratorPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof MGeneratorPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new MGeneratorPackageImpl());
+		Object registeredGeneratorPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		MGeneratorPackageImpl theGeneratorPackage = registeredGeneratorPackage instanceof MGeneratorPackageImpl ? (MGeneratorPackageImpl)registeredGeneratorPackage : new MGeneratorPackageImpl();
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		MBasicPackageImpl theBasicPackage = (MBasicPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI) instanceof MBasicPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI) : MBasicPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI);
+		MBasicPackageImpl theBasicPackage = (MBasicPackageImpl)(registeredPackage instanceof MBasicPackageImpl ? registeredPackage : MBasicPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theGeneratorPackage.createPackageContents();
@@ -129,7 +131,6 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		// Mark meta-data to indicate it can't be changed
 		theGeneratorPackage.freeze();
 
-  
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(MGeneratorPackage.eNS_URI, theGeneratorPackage);
 		return theGeneratorPackage;
