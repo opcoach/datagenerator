@@ -37,11 +37,7 @@ public abstract class ValueGeneratorImpl<T> extends MValueGeneratorImpl<T> imple
 		return (badValueProportion == 0) ? "with no errors" : "with " + badValueProportion + " % of errors";
 	}
 
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
+	
 	public String getDescription()
 	{
 		if (description == null)
@@ -54,11 +50,7 @@ public abstract class ValueGeneratorImpl<T> extends MValueGeneratorImpl<T> imple
 
 
 	
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
+	
 	public T generateValue()
 	{
 		T result = null;

@@ -5,11 +5,7 @@ import com.opcoach.generator.basic.FloatGenerator;
 // This class overrides the generated class and will be instantiated by factory
 public class FloatGeneratorImpl extends MFloatGeneratorImpl implements FloatGenerator
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
+	
 	protected FloatGeneratorImpl()
 	{
 		this(0.0f, 100.0f);

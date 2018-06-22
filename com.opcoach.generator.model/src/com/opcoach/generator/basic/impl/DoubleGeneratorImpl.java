@@ -5,11 +5,7 @@ import com.opcoach.generator.basic.DoubleGenerator;
 // This class overrides the generated class and will be instantiated by factory
 public class DoubleGeneratorImpl extends MDoubleGeneratorImpl implements DoubleGenerator
 {
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
+	
 	protected DoubleGeneratorImpl()
 	{
 		this(0.0d, 100.0d);
