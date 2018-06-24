@@ -23,6 +23,11 @@ Get the home page of this project here :
 https://github.com/opcoach/datagenerator
    </license>
 
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+   </requires>
+
    <plugin
          id="com.opcoach.generator.model"
          download-size="0"
