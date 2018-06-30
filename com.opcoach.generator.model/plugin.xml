@@ -18,15 +18,17 @@
    <extension
          point="org.eclipse.emf.ecore.generated_package">
       <package
-            uri="http://www.opcoach.com/generator/basic/1.0"
-            class="com.opcoach.generator.basic.MBasicPackage">
+            class="com.opcoach.generator.basic.MBasicPackage"
+            genModel="model/generator.genmodel"
+            uri="http://www.opcoach.com/generator/basic/1.0">
       </package>
    </extension>
    <extension
          point="org.eclipse.emf.ecore.generated_package">
       <package
-            uri="http://www.opcoach.generator/1.0"
-            class="com.opcoach.generator.MGeneratorPackage">
+            class="com.opcoach.generator.MGeneratorPackage"
+            genModel="model/generator.genmodel"
+            uri="http://www.opcoach.generator/1.0">
       </package>
    </extension>
 
