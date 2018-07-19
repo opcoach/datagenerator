@@ -15,15 +15,8 @@
 		<repository>
 			<id>oxygen</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/oxygen</url>
+			<url>http://download.eclipse.org/releases/photon</url>
 		</repository>
-<!--
-		<repository>
-			<id>eclipse.xtend</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
-		</repository>
--->
 
 	</repositories>
 
