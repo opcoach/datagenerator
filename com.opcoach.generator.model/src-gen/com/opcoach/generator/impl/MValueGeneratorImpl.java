@@ -4,8 +4,10 @@ package com.opcoach.generator.impl;
 
 import com.opcoach.generator.MGeneratorPackage;
 import com.opcoach.generator.ValueGenerator;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Locale;
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -505,6 +507,20 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 				return LOCALE_EDEFAULT == null ? locale != null : !LOCALE_EDEFAULT.equals(locale);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case MGeneratorPackage.VALUE_GENERATOR___GENERATE_VALUE:
+				return generateValue();
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

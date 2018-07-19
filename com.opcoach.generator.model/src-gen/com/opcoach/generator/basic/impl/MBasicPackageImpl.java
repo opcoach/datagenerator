@@ -503,7 +503,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 		trueGeneratorEClass.getESuperTypes().add(this.getBooleanGenerator());
 		falseGeneratorEClass.getESuperTypes().add(this.getBooleanGenerator());
 
-		// Initialize classes and features; add operations and parameters
+		// Initialize classes, features, and operations; add parameters
 		initEClass(booleanGeneratorEClass, BooleanGenerator.class, "BooleanGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(dateGeneratorEClass, DateGenerator.class, "DateGenerator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

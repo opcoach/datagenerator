@@ -141,6 +141,24 @@ public interface MBasicPackage extends EPackage
 	int BOOLEAN_GENERATOR_FEATURE_COUNT = MGeneratorPackage.VALUE_GENERATOR_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN_GENERATOR___GENERATE_VALUE = MGeneratorPackage.VALUE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>Boolean Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN_GENERATOR_OPERATION_COUNT = MGeneratorPackage.VALUE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MDateGeneratorImpl <em>Date Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -259,6 +277,33 @@ public interface MBasicPackage extends EPackage
 	int DATE_GENERATOR_FEATURE_COUNT = MGeneratorPackage.RANGE_GENERATOR_FEATURE_COUNT + 1;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_GENERATOR___GENERATE_VALUE = MGeneratorPackage.RANGE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT;
+
+	/**
+	 * The number of operations of the '<em>Date Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATE_GENERATOR_OPERATION_COUNT = MGeneratorPackage.RANGE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MDoubleGeneratorImpl <em>Double Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -366,6 +411,33 @@ public interface MBasicPackage extends EPackage
 	 * @ordered
 	 */
 	int DOUBLE_GENERATOR_FEATURE_COUNT = MGeneratorPackage.RANGE_GENERATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_GENERATOR___GENERATE_VALUE = MGeneratorPackage.RANGE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT;
+
+	/**
+	 * The number of operations of the '<em>Double Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_GENERATOR_OPERATION_COUNT = MGeneratorPackage.RANGE_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MFloatGeneratorImpl <em>Float Generator</em>}' class.
@@ -477,6 +549,33 @@ public interface MBasicPackage extends EPackage
 	int FLOAT_GENERATOR_FEATURE_COUNT = MGeneratorPackage.RANGE_GENERATOR_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOAT_GENERATOR___GENERATE_VALUE = MGeneratorPackage.RANGE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOAT_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT;
+
+	/**
+	 * The number of operations of the '<em>Float Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOAT_GENERATOR_OPERATION_COUNT = MGeneratorPackage.RANGE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MIDGeneratorImpl <em>ID Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -575,6 +674,24 @@ public interface MBasicPackage extends EPackage
 	 * @ordered
 	 */
 	int ID_GENERATOR_FEATURE_COUNT = MGeneratorPackage.VALUE_GENERATOR_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_GENERATOR___GENERATE_VALUE = MGeneratorPackage.VALUE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>ID Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_GENERATOR_OPERATION_COUNT = MGeneratorPackage.VALUE_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MIntGeneratorImpl <em>Int Generator</em>}' class.
@@ -686,6 +803,33 @@ public interface MBasicPackage extends EPackage
 	int INT_GENERATOR_FEATURE_COUNT = MGeneratorPackage.RANGE_GENERATOR_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_GENERATOR___GENERATE_VALUE = MGeneratorPackage.RANGE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT;
+
+	/**
+	 * The number of operations of the '<em>Int Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_GENERATOR_OPERATION_COUNT = MGeneratorPackage.RANGE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MLongGeneratorImpl <em>Long Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -795,6 +939,33 @@ public interface MBasicPackage extends EPackage
 	int LONG_GENERATOR_FEATURE_COUNT = MGeneratorPackage.RANGE_GENERATOR_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LONG_GENERATOR___GENERATE_VALUE = MGeneratorPackage.RANGE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LONG_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT;
+
+	/**
+	 * The number of operations of the '<em>Long Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LONG_GENERATOR_OPERATION_COUNT = MGeneratorPackage.RANGE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MNullValueGeneratorImpl <em>Null Value Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -875,6 +1046,24 @@ public interface MBasicPackage extends EPackage
 	 * @ordered
 	 */
 	int NULL_VALUE_GENERATOR_FEATURE_COUNT = MGeneratorPackage.VALUE_GENERATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NULL_VALUE_GENERATOR___GENERATE_VALUE = MGeneratorPackage.VALUE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>Null Value Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NULL_VALUE_GENERATOR_OPERATION_COUNT = MGeneratorPackage.VALUE_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MStringGeneratorImpl <em>String Generator</em>}' class.
@@ -995,6 +1184,24 @@ public interface MBasicPackage extends EPackage
 	int STRING_GENERATOR_FEATURE_COUNT = MGeneratorPackage.REFERENCE_GENERATOR_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_GENERATOR___GENERATE_VALUE = MGeneratorPackage.REFERENCE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>String Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_GENERATOR_OPERATION_COUNT = MGeneratorPackage.REFERENCE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MTrueGeneratorImpl <em>True Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1077,6 +1284,24 @@ public interface MBasicPackage extends EPackage
 	int TRUE_GENERATOR_FEATURE_COUNT = BOOLEAN_GENERATOR_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUE_GENERATOR___GENERATE_VALUE = BOOLEAN_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>True Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRUE_GENERATOR_OPERATION_COUNT = BOOLEAN_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.impl.MFalseGeneratorImpl <em>False Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1157,6 +1382,24 @@ public interface MBasicPackage extends EPackage
 	 * @ordered
 	 */
 	int FALSE_GENERATOR_FEATURE_COUNT = BOOLEAN_GENERATOR_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FALSE_GENERATOR___GENERATE_VALUE = BOOLEAN_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>False Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FALSE_GENERATOR_OPERATION_COUNT = BOOLEAN_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link com.opcoach.generator.basic.CasePolicyType <em>Case Policy Type</em>}' enum.

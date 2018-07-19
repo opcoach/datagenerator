@@ -1,10 +1,11 @@
 /**
+ * © OPCoach 2018
  */
 package com.opcoach.generator;
 
 import java.util.Locale;
-import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,8 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model abstract="true"
  * @generated
  */
-public interface MValueGenerator<T> extends EObject
-{
+public interface MValueGenerator<T> extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Bad Value Proportion</b></em>' attribute.
 	 * <!-- begin-user-doc -->

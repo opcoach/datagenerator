@@ -4,7 +4,9 @@ package com.opcoach.generator.impl;
 
 import com.opcoach.generator.MGeneratorPackage;
 import com.opcoach.generator.RangeGenerator;
+import java.lang.reflect.InvocationTargetException;
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
@@ -239,6 +241,21 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 				return step != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case MGeneratorPackage.RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT:
+				setBounds((T)arguments.get(0), (T)arguments.get(1));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**

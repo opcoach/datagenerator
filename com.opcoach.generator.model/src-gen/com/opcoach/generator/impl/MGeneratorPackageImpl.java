@@ -221,6 +221,15 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EOperation getValueGenerator__GenerateValue() {
+		return valueGeneratorEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRangeGenerator()
 	{
 		return rangeGeneratorEClass;
@@ -254,6 +263,15 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	public EAttribute getRangeGenerator_Step()
 	{
 		return (EAttribute)rangeGeneratorEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getRangeGenerator__SetBounds__Object_Object() {
+		return rangeGeneratorEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -344,11 +362,13 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__DESCRIPTION);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__ID);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__LOCALE);
+		createEOperation(valueGeneratorEClass, VALUE_GENERATOR___GENERATE_VALUE);
 
 		rangeGeneratorEClass = createEClass(RANGE_GENERATOR);
 		createEAttribute(rangeGeneratorEClass, RANGE_GENERATOR__LOW);
 		createEAttribute(rangeGeneratorEClass, RANGE_GENERATOR__HIGH);
 		createEAttribute(rangeGeneratorEClass, RANGE_GENERATOR__STEP);
+		createEOperation(rangeGeneratorEClass, RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT);
 
 		referenceGeneratorEClass = createEClass(REFERENCE_GENERATOR);
 		createEAttribute(referenceGeneratorEClass, REFERENCE_GENERATOR__STEP);
@@ -407,7 +427,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		g1.getETypeArguments().add(g2);
 		referenceGeneratorEClass.getEGenericSuperTypes().add(g1);
 
-		// Initialize classes and features; add operations and parameters
+		// Initialize classes, features, and operations; add parameters
 		initEClass(valueGeneratorEClass, ValueGenerator.class, "ValueGenerator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getValueGenerator_BadValueProportion(), ecorePackage.getEInt(), "badValueProportion", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		g1 = createEGenericType(this.getValueGenerator());
@@ -421,7 +441,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		initEAttribute(getValueGenerator_ID(), ecorePackage.getEString(), "ID", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_Locale(), this.getLocale(), "locale", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		EOperation op = addEOperation(valueGeneratorEClass, null, "generateValue", 0, 1, IS_UNIQUE, IS_ORDERED);
+		EOperation op = initEOperation(getValueGenerator__GenerateValue(), null, "generateValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(valueGeneratorEClass_T);
 		initEOperation(op, g1);
 
@@ -433,7 +453,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		g1 = createEGenericType(rangeGeneratorEClass_T);
 		initEAttribute(getRangeGenerator_Step(), g1, "step", null, 0, 1, RangeGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		op = addEOperation(rangeGeneratorEClass, null, "setBounds", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getRangeGenerator__SetBounds__Object_Object(), null, "setBounds", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(rangeGeneratorEClass_T);
 		addEParameter(op, g1, "low", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(rangeGeneratorEClass_T);

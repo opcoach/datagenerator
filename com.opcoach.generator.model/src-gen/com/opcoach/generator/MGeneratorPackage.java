@@ -5,6 +5,7 @@ package com.opcoach.generator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -140,6 +141,24 @@ public interface MGeneratorPackage extends EPackage
 	int VALUE_GENERATOR_FEATURE_COUNT = 7;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_GENERATOR___GENERATE_VALUE = 0;
+
+	/**
+	 * The number of operations of the '<em>Value Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_GENERATOR_OPERATION_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.impl.MRangeGeneratorImpl <em>Range Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -249,6 +268,33 @@ public interface MGeneratorPackage extends EPackage
 	int RANGE_GENERATOR_FEATURE_COUNT = VALUE_GENERATOR_FEATURE_COUNT + 3;
 
 	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE_GENERATOR___GENERATE_VALUE = VALUE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The operation id for the '<em>Set Bounds</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = VALUE_GENERATOR_OPERATION_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Range Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE_GENERATOR_OPERATION_COUNT = VALUE_GENERATOR_OPERATION_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link com.opcoach.generator.impl.MReferenceGeneratorImpl <em>Reference Generator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -347,6 +393,24 @@ public interface MGeneratorPackage extends EPackage
 	 * @ordered
 	 */
 	int REFERENCE_GENERATOR_FEATURE_COUNT = VALUE_GENERATOR_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Generate Value</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERENCE_GENERATOR___GENERATE_VALUE = VALUE_GENERATOR___GENERATE_VALUE;
+
+	/**
+	 * The number of operations of the '<em>Reference Generator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERENCE_GENERATOR_OPERATION_COUNT = VALUE_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '<em>Collection</em>' data type.
@@ -457,6 +521,16 @@ public interface MGeneratorPackage extends EPackage
 	EAttribute getValueGenerator_Locale();
 
 	/**
+	 * Returns the meta object for the '{@link com.opcoach.generator.MValueGenerator#generateValue() <em>Generate Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Generate Value</em>' operation.
+	 * @see com.opcoach.generator.MValueGenerator#generateValue()
+	 * @generated
+	 */
+	EOperation getValueGenerator__GenerateValue();
+
+	/**
 	 * Returns the meta object for class '{@link com.opcoach.generator.MRangeGenerator <em>Range Generator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -498,6 +572,16 @@ public interface MGeneratorPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getRangeGenerator_Step();
+
+	/**
+	 * Returns the meta object for the '{@link com.opcoach.generator.MRangeGenerator#setBounds(java.lang.Object, java.lang.Object) <em>Set Bounds</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Bounds</em>' operation.
+	 * @see com.opcoach.generator.MRangeGenerator#setBounds(java.lang.Object, java.lang.Object)
+	 * @generated
+	 */
+	EOperation getRangeGenerator__SetBounds__Object_Object();
 
 	/**
 	 * Returns the meta object for class '{@link com.opcoach.generator.MReferenceGenerator <em>Reference Generator</em>}'.
@@ -643,6 +727,14 @@ public interface MGeneratorPackage extends EPackage
 		EAttribute VALUE_GENERATOR__LOCALE = eINSTANCE.getValueGenerator_Locale();
 
 		/**
+		 * The meta object literal for the '<em><b>Generate Value</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation VALUE_GENERATOR___GENERATE_VALUE = eINSTANCE.getValueGenerator__GenerateValue();
+
+		/**
 		 * The meta object literal for the '{@link com.opcoach.generator.impl.MRangeGeneratorImpl <em>Range Generator</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -675,6 +767,14 @@ public interface MGeneratorPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute RANGE_GENERATOR__STEP = eINSTANCE.getRangeGenerator_Step();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Bounds</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation RANGE_GENERATOR___SET_BOUNDS__OBJECT_OBJECT = eINSTANCE.getRangeGenerator__SetBounds__Object_Object();
 
 		/**
 		 * The meta object literal for the '{@link com.opcoach.generator.impl.MReferenceGeneratorImpl <em>Reference Generator</em>}' class.
