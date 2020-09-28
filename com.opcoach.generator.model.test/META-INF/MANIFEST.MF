@@ -5,5 +5,6 @@ Bundle-SymbolicName: com.opcoach.generator.model.test
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: OPCOACH
 Fragment-Host: com.opcoach.generator.model;bundle-version="1.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.junit
+Automatic-Module-Name: com.opcoach.generator.model.test
