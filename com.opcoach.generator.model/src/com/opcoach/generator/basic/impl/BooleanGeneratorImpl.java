@@ -2,6 +2,7 @@ package com.opcoach.generator.basic.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
+import com.opcoach.generator.Type;
 import com.opcoach.generator.basic.BasicPackage;
 import com.opcoach.generator.basic.BooleanGenerator;
 
@@ -56,6 +57,11 @@ public class BooleanGeneratorImpl extends MBooleanGeneratorImpl implements Boole
 		super.setLastGeneratedValue(newLastGeneratedValue);
 	}
 	
+	
+	@Override
+	public Type getValueType() {
+		return Type.BOOLEAN;
+	}
 	
 
 

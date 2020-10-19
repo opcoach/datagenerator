@@ -104,6 +104,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getKeyLength()
 	{
 		return keyLength;
@@ -114,6 +115,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setKeyLength(int newKeyLength)
 	{
 		int oldKeyLength = keyLength;
@@ -127,6 +129,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getPrefix()
 	{
 		return prefix;
@@ -137,6 +140,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPrefix(String newPrefix)
 	{
 		String oldPrefix = prefix;

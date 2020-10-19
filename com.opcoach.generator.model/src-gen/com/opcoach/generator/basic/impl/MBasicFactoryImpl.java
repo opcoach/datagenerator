@@ -114,6 +114,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BooleanGenerator createBooleanGenerator()
 	{
 		BooleanGeneratorImpl booleanGenerator = new BooleanGeneratorImpl();
@@ -125,6 +126,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DateGenerator createDateGenerator()
 	{
 		DateGeneratorImpl dateGenerator = new DateGeneratorImpl();
@@ -136,6 +138,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DoubleGenerator createDoubleGenerator()
 	{
 		DoubleGeneratorImpl doubleGenerator = new DoubleGeneratorImpl();
@@ -147,6 +150,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FloatGenerator createFloatGenerator()
 	{
 		FloatGeneratorImpl floatGenerator = new FloatGeneratorImpl();
@@ -158,6 +162,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IDGenerator createIDGenerator()
 	{
 		IDGeneratorImpl idGenerator = new IDGeneratorImpl();
@@ -169,6 +174,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IntGenerator createIntGenerator()
 	{
 		IntGeneratorImpl intGenerator = new IntGeneratorImpl();
@@ -180,6 +186,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LongGenerator createLongGenerator()
 	{
 		LongGeneratorImpl longGenerator = new LongGeneratorImpl();
@@ -191,6 +198,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NullValueGenerator createNullValueGenerator()
 	{
 		NullValueGeneratorImpl nullValueGenerator = new NullValueGeneratorImpl();
@@ -202,6 +210,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StringGenerator createStringGenerator()
 	{
 		StringGeneratorImpl stringGenerator = new StringGeneratorImpl();
@@ -213,6 +222,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TrueGenerator createTrueGenerator()
 	{
 		TrueGeneratorImpl trueGenerator = new TrueGeneratorImpl();
@@ -224,6 +234,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FalseGenerator createFalseGenerator()
 	{
 		FalseGeneratorImpl falseGenerator = new FalseGeneratorImpl();
@@ -257,6 +268,7 @@ public class MBasicFactoryImpl extends EFactoryImpl implements MBasicFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MBasicPackage getBasicPackage()
 	{
 		return (MBasicPackage)getEPackage();

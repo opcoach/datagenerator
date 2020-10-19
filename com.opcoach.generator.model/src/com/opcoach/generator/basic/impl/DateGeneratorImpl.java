@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+import com.opcoach.generator.Type;
 import com.opcoach.generator.basic.DateGenerator;
 
 // This class overrides the generated class and will be instantiated by factory
@@ -91,6 +92,11 @@ public class DateGeneratorImpl extends MDateGeneratorImpl implements DateGenerat
 			String highStr = df.format(getHigh());
 			return " [" + lowStr + "," + highStr + "] " + super.computeDescription();
 		}
+	}
+	
+	@Override
+	public Type getValueType() {
+		return Type.DATE;
 	}
 	
 }

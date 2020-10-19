@@ -206,6 +206,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBooleanGenerator()
 	{
 		return booleanGeneratorEClass;
@@ -216,6 +217,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDateGenerator()
 	{
 		return dateGeneratorEClass;
@@ -226,6 +228,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDateGenerator_GenerateNow()
 	{
 		return (EAttribute)dateGeneratorEClass.getEStructuralFeatures().get(0);
@@ -236,6 +239,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDoubleGenerator()
 	{
 		return doubleGeneratorEClass;
@@ -246,6 +250,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFloatGenerator()
 	{
 		return floatGeneratorEClass;
@@ -256,6 +261,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIDGenerator()
 	{
 		return idGeneratorEClass;
@@ -266,6 +272,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIDGenerator_KeyLength()
 	{
 		return (EAttribute)idGeneratorEClass.getEStructuralFeatures().get(0);
@@ -276,6 +283,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIDGenerator_Prefix()
 	{
 		return (EAttribute)idGeneratorEClass.getEStructuralFeatures().get(1);
@@ -286,6 +294,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIntGenerator()
 	{
 		return intGeneratorEClass;
@@ -296,6 +305,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLongGenerator()
 	{
 		return longGeneratorEClass;
@@ -306,6 +316,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNullValueGenerator()
 	{
 		return nullValueGeneratorEClass;
@@ -316,6 +327,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStringGenerator()
 	{
 		return stringGeneratorEClass;
@@ -326,6 +338,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStringGenerator_DataFilename()
 	{
 		return (EAttribute)stringGeneratorEClass.getEStructuralFeatures().get(0);
@@ -336,6 +349,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStringGenerator_CasePolicy()
 	{
 		return (EAttribute)stringGeneratorEClass.getEStructuralFeatures().get(1);
@@ -346,6 +360,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTrueGenerator()
 	{
 		return trueGeneratorEClass;
@@ -356,6 +371,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFalseGenerator()
 	{
 		return falseGeneratorEClass;
@@ -366,6 +382,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCasePolicyType()
 	{
 		return casePolicyTypeEEnum;
@@ -376,6 +393,7 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MBasicFactory getBasicFactory()
 	{
 		return (MBasicFactory)getEFactoryInstance();

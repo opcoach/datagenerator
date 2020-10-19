@@ -5,6 +5,7 @@ package com.opcoach.generator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -132,13 +133,31 @@ public interface MGeneratorPackage extends EPackage
 	int VALUE_GENERATOR__LOCALE = 6;
 
 	/**
+	 * The feature id for the '<em><b>Value Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_GENERATOR__VALUE_TYPE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUE_GENERATOR__PARAMETERS = 8;
+
+	/**
 	 * The number of structural features of the '<em>Value Generator</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VALUE_GENERATOR_FEATURE_COUNT = 7;
+	int VALUE_GENERATOR_FEATURE_COUNT = 9;
 
 	/**
 	 * The operation id for the '<em>Generate Value</em>' operation.
@@ -230,6 +249,24 @@ public interface MGeneratorPackage extends EPackage
 	 * @ordered
 	 */
 	int RANGE_GENERATOR__LOCALE = VALUE_GENERATOR__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Value Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE_GENERATOR__VALUE_TYPE = VALUE_GENERATOR__VALUE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE_GENERATOR__PARAMETERS = VALUE_GENERATOR__PARAMETERS;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -368,6 +405,24 @@ public interface MGeneratorPackage extends EPackage
 	int REFERENCE_GENERATOR__LOCALE = VALUE_GENERATOR__LOCALE;
 
 	/**
+	 * The feature id for the '<em><b>Value Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERENCE_GENERATOR__VALUE_TYPE = VALUE_GENERATOR__VALUE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFERENCE_GENERATOR__PARAMETERS = VALUE_GENERATOR__PARAMETERS;
+
+	/**
 	 * The feature id for the '<em><b>Step</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -413,6 +468,71 @@ public interface MGeneratorPackage extends EPackage
 	int REFERENCE_GENERATOR_OPERATION_COUNT = VALUE_GENERATOR_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link com.opcoach.generator.impl.MGeneratorParameterImpl <em>Parameter</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.opcoach.generator.impl.MGeneratorParameterImpl
+	 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getGeneratorParameter()
+	 * @generated
+	 */
+	int GENERATOR_PARAMETER = 3;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_PARAMETER__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_PARAMETER__TYPE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_PARAMETER__DEFAULT_VALUE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Parameter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_PARAMETER_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Parameter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR_PARAMETER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.opcoach.generator.Type <em>Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.opcoach.generator.Type
+	 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getType()
+	 * @generated
+	 */
+	int TYPE = 4;
+
+	/**
 	 * The meta object id for the '<em>Collection</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -420,7 +540,7 @@ public interface MGeneratorPackage extends EPackage
 	 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getCollection()
 	 * @generated
 	 */
-	int COLLECTION = 3;
+	int COLLECTION = 5;
 
 	/**
 	 * The meta object id for the '<em>Locale</em>' data type.
@@ -430,7 +550,7 @@ public interface MGeneratorPackage extends EPackage
 	 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getLocale()
 	 * @generated
 	 */
-	int LOCALE = 4;
+	int LOCALE = 6;
 
 
 	/**
@@ -519,6 +639,28 @@ public interface MGeneratorPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getValueGenerator_Locale();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.opcoach.generator.MValueGenerator#getValueType <em>Value Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value Type</em>'.
+	 * @see com.opcoach.generator.MValueGenerator#getValueType()
+	 * @see #getValueGenerator()
+	 * @generated
+	 */
+	EAttribute getValueGenerator_ValueType();
+
+	/**
+	 * Returns the meta object for the reference list '{@link com.opcoach.generator.MValueGenerator#getParametersList <em>Parameters</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Parameters</em>'.
+	 * @see com.opcoach.generator.MValueGenerator#getParametersList()
+	 * @see #getValueGenerator()
+	 * @generated
+	 */
+	EReference getValueGenerator_Parameters();
 
 	/**
 	 * Returns the meta object for the '{@link com.opcoach.generator.MValueGenerator#generateValue() <em>Generate Value</em>}' operation.
@@ -614,6 +756,59 @@ public interface MGeneratorPackage extends EPackage
 	 * @generated
 	 */
 	EAttribute getReferenceGenerator_Values();
+
+	/**
+	 * Returns the meta object for class '{@link com.opcoach.generator.MGeneratorParameter <em>Parameter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Parameter</em>'.
+	 * @see com.opcoach.generator.MGeneratorParameter
+	 * @generated
+	 */
+	EClass getGeneratorParameter();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.opcoach.generator.MGeneratorParameter#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see com.opcoach.generator.MGeneratorParameter#getName()
+	 * @see #getGeneratorParameter()
+	 * @generated
+	 */
+	EAttribute getGeneratorParameter_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.opcoach.generator.MGeneratorParameter#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see com.opcoach.generator.MGeneratorParameter#getType()
+	 * @see #getGeneratorParameter()
+	 * @generated
+	 */
+	EAttribute getGeneratorParameter_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.opcoach.generator.MGeneratorParameter#getDefaultValue <em>Default Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Value</em>'.
+	 * @see com.opcoach.generator.MGeneratorParameter#getDefaultValue()
+	 * @see #getGeneratorParameter()
+	 * @generated
+	 */
+	EAttribute getGeneratorParameter_DefaultValue();
+
+	/**
+	 * Returns the meta object for enum '{@link com.opcoach.generator.Type <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Type</em>'.
+	 * @see com.opcoach.generator.Type
+	 * @generated
+	 */
+	EEnum getType();
 
 	/**
 	 * Returns the meta object for data type '{@link java.util.Collection <em>Collection</em>}'.
@@ -727,6 +922,22 @@ public interface MGeneratorPackage extends EPackage
 		EAttribute VALUE_GENERATOR__LOCALE = eINSTANCE.getValueGenerator_Locale();
 
 		/**
+		 * The meta object literal for the '<em><b>Value Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VALUE_GENERATOR__VALUE_TYPE = eINSTANCE.getValueGenerator_ValueType();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VALUE_GENERATOR__PARAMETERS = eINSTANCE.getValueGenerator_Parameters();
+
+		/**
 		 * The meta object literal for the '<em><b>Generate Value</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -801,6 +1012,50 @@ public interface MGeneratorPackage extends EPackage
 		 * @generated
 		 */
 		EAttribute REFERENCE_GENERATOR__VALUES = eINSTANCE.getReferenceGenerator_Values();
+
+		/**
+		 * The meta object literal for the '{@link com.opcoach.generator.impl.MGeneratorParameterImpl <em>Parameter</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.opcoach.generator.impl.MGeneratorParameterImpl
+		 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getGeneratorParameter()
+		 * @generated
+		 */
+		EClass GENERATOR_PARAMETER = eINSTANCE.getGeneratorParameter();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENERATOR_PARAMETER__NAME = eINSTANCE.getGeneratorParameter_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENERATOR_PARAMETER__TYPE = eINSTANCE.getGeneratorParameter_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENERATOR_PARAMETER__DEFAULT_VALUE = eINSTANCE.getGeneratorParameter_DefaultValue();
+
+		/**
+		 * The meta object literal for the '{@link com.opcoach.generator.Type <em>Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.opcoach.generator.Type
+		 * @see com.opcoach.generator.impl.MGeneratorPackageImpl#getType()
+		 * @generated
+		 */
+		EEnum TYPE = eINSTANCE.getType();
 
 		/**
 		 * The meta object literal for the '<em>Collection</em>' data type.

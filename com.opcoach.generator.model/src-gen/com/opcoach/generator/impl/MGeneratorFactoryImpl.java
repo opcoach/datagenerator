@@ -65,6 +65,7 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	{
 		switch (eClass.getClassifierID()) {
 			case MGeneratorPackage.REFERENCE_GENERATOR: return createReferenceGenerator();
+			case MGeneratorPackage.GENERATOR_PARAMETER: return createGeneratorParameter();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -79,6 +80,8 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	public Object createFromString(EDataType eDataType, String initialValue)
 	{
 		switch (eDataType.getClassifierID()) {
+			case MGeneratorPackage.TYPE:
+				return createTypeFromString(eDataType, initialValue);
 			case MGeneratorPackage.COLLECTION:
 				return createCollectionFromString(eDataType, initialValue);
 			case MGeneratorPackage.LOCALE:
@@ -97,6 +100,8 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	public String convertToString(EDataType eDataType, Object instanceValue)
 	{
 		switch (eDataType.getClassifierID()) {
+			case MGeneratorPackage.TYPE:
+				return convertTypeToString(eDataType, instanceValue);
 			case MGeneratorPackage.COLLECTION:
 				return convertCollectionToString(eDataType, instanceValue);
 			case MGeneratorPackage.LOCALE:
@@ -111,10 +116,42 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public <T> ReferenceGenerator<T> createReferenceGenerator()
 	{
 		ReferenceGeneratorImpl<T> referenceGenerator = new ReferenceGeneratorImpl<T>();
 		return referenceGenerator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeneratorParameter createGeneratorParameter() {
+		GeneratorParameterImpl generatorParameter = new GeneratorParameterImpl();
+		return generatorParameter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Type createTypeFromString(EDataType eDataType, String initialValue) {
+		Type result = Type.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**
@@ -162,6 +199,7 @@ public class MGeneratorFactoryImpl extends EFactoryImpl implements MGeneratorFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MGeneratorPackage getGeneratorPackage()
 	{
 		return (MGeneratorPackage)getEPackage();

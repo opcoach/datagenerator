@@ -82,6 +82,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getStep()
 	{
 		return step;
@@ -92,6 +93,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStep(int newStep)
 	{
 		int oldStep = step;
@@ -105,6 +107,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Collection<T> getValues()
 	{
 		return values;
@@ -115,6 +118,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValues(Collection<T> newValues)
 	{
 		Collection<T> oldValues = values;

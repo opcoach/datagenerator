@@ -5,6 +5,7 @@ package com.opcoach.generator;
 
 import java.util.Locale;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -23,6 +24,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.opcoach.generator.MValueGenerator#getDescription <em>Description</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getLocale <em>Locale</em>}</li>
+ *   <li>{@link com.opcoach.generator.MValueGenerator#getValueType <em>Value Type</em>}</li>
+ *   <li>{@link com.opcoach.generator.MValueGenerator#getParametersList <em>Parameters</em>}</li>
  * </ul>
  *
  * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator()
@@ -230,6 +233,66 @@ public interface MValueGenerator<T> extends EObject {
 	 * @generated
 	 */
 	void setLocale(Locale value);
+
+	/**
+	 * Returns the value of the '<em><b>Value Type</b></em>' attribute.
+	 * The literals are from the enumeration {@link com.opcoach.generator.Type}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Value Type</em>' attribute.
+	 * @see com.opcoach.generator.Type
+	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_ValueType()
+	 * @model changeable="false"
+	 * @generated
+	 */
+	Type getValueType();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeneratorParameter[] getParameters();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeneratorParameter getParameters(int index);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	int getParametersLength();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	void setParameters(GeneratorParameter[] newParameters);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	void setParameters(int index, GeneratorParameter element);
+
+	/**
+	 * Returns the value of the '<em><b>Parameters</b></em>' reference list.
+	 * The list contents are of type {@link com.opcoach.generator.GeneratorParameter}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parameters</em>' reference list.
+	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_Parameters()
+	 * @model
+	 * @generated
+	 */
+	EList<GeneratorParameter> getParametersList();
 
 	/**
 	 * <!-- begin-user-doc -->

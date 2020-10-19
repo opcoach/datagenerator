@@ -108,6 +108,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateNow()
 	{
 		return generateNow;
@@ -118,6 +119,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateNow(boolean newGenerateNow)
 	{
 		boolean oldGenerateNow = generateNow;

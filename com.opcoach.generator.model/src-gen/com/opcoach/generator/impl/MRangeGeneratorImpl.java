@@ -84,6 +84,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public T getLow()
 	{
 		return low;
@@ -94,6 +95,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLow(T newLow)
 	{
 		T oldLow = low;
@@ -107,6 +109,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public T getHigh()
 	{
 		return high;
@@ -117,6 +120,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHigh(T newHigh)
 	{
 		T oldHigh = high;
@@ -130,6 +134,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public T getStep()
 	{
 		return step;
@@ -140,6 +145,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStep(T newStep)
 	{
 		T oldStep = step;
@@ -153,6 +159,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBounds(T low, T high)
 	{
 		// TODO: implement this method

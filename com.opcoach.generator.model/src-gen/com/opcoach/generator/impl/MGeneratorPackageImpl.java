@@ -8,6 +8,7 @@ import java.util.Locale;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
@@ -16,10 +17,12 @@ import org.eclipse.emf.ecore.ETypeParameter;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import com.opcoach.generator.GeneratorPackage;
+import com.opcoach.generator.GeneratorParameter;
 import com.opcoach.generator.MGeneratorFactory;
 import com.opcoach.generator.MGeneratorPackage;
 import com.opcoach.generator.RangeGenerator;
 import com.opcoach.generator.ReferenceGenerator;
+import com.opcoach.generator.Type;
 import com.opcoach.generator.ValueGenerator;
 import com.opcoach.generator.basic.MBasicPackage;
 import com.opcoach.generator.basic.impl.MBasicPackageImpl;
@@ -52,6 +55,20 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * @generated
 	 */
 	private EClass referenceGeneratorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass generatorParameterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum typeEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,6 +158,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getValueGenerator()
 	{
 		return valueGeneratorEClass;
@@ -151,6 +169,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_BadValueProportion()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(0);
@@ -161,6 +180,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getValueGenerator_BadValueGenerator()
 	{
 		return (EReference)valueGeneratorEClass.getEStructuralFeatures().get(1);
@@ -171,6 +191,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_LastGeneratedValue()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(2);
@@ -181,6 +202,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_RandomSeed()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(3);
@@ -191,6 +213,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_Description()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(4);
@@ -201,6 +224,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_ID()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(5);
@@ -211,6 +235,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValueGenerator_Locale()
 	{
 		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(6);
@@ -221,6 +246,27 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public EAttribute getValueGenerator_ValueType() {
+		return (EAttribute)valueGeneratorEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getValueGenerator_Parameters() {
+		return (EReference)valueGeneratorEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EOperation getValueGenerator__GenerateValue() {
 		return valueGeneratorEClass.getEOperations().get(0);
 	}
@@ -230,6 +276,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRangeGenerator()
 	{
 		return rangeGeneratorEClass;
@@ -240,6 +287,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRangeGenerator_Low()
 	{
 		return (EAttribute)rangeGeneratorEClass.getEStructuralFeatures().get(0);
@@ -250,6 +298,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRangeGenerator_High()
 	{
 		return (EAttribute)rangeGeneratorEClass.getEStructuralFeatures().get(1);
@@ -260,6 +309,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRangeGenerator_Step()
 	{
 		return (EAttribute)rangeGeneratorEClass.getEStructuralFeatures().get(2);
@@ -270,6 +320,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getRangeGenerator__SetBounds__Object_Object() {
 		return rangeGeneratorEClass.getEOperations().get(0);
 	}
@@ -279,6 +330,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReferenceGenerator()
 	{
 		return referenceGeneratorEClass;
@@ -289,6 +341,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReferenceGenerator_Step()
 	{
 		return (EAttribute)referenceGeneratorEClass.getEStructuralFeatures().get(0);
@@ -299,6 +352,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReferenceGenerator_Values()
 	{
 		return (EAttribute)referenceGeneratorEClass.getEStructuralFeatures().get(1);
@@ -309,6 +363,57 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public EClass getGeneratorParameter() {
+		return generatorParameterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGeneratorParameter_Name() {
+		return (EAttribute)generatorParameterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGeneratorParameter_Type() {
+		return (EAttribute)generatorParameterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGeneratorParameter_DefaultValue() {
+		return (EAttribute)generatorParameterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getType() {
+		return typeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EDataType getCollection()
 	{
 		return collectionEDataType;
@@ -319,6 +424,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getLocale()
 	{
 		return localeEDataType;
@@ -329,6 +435,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MGeneratorFactory getGeneratorFactory()
 	{
 		return (MGeneratorFactory)getEFactoryInstance();
@@ -362,6 +469,8 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__DESCRIPTION);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__ID);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__LOCALE);
+		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__VALUE_TYPE);
+		createEReference(valueGeneratorEClass, VALUE_GENERATOR__PARAMETERS);
 		createEOperation(valueGeneratorEClass, VALUE_GENERATOR___GENERATE_VALUE);
 
 		rangeGeneratorEClass = createEClass(RANGE_GENERATOR);
@@ -373,6 +482,14 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		referenceGeneratorEClass = createEClass(REFERENCE_GENERATOR);
 		createEAttribute(referenceGeneratorEClass, REFERENCE_GENERATOR__STEP);
 		createEAttribute(referenceGeneratorEClass, REFERENCE_GENERATOR__VALUES);
+
+		generatorParameterEClass = createEClass(GENERATOR_PARAMETER);
+		createEAttribute(generatorParameterEClass, GENERATOR_PARAMETER__NAME);
+		createEAttribute(generatorParameterEClass, GENERATOR_PARAMETER__TYPE);
+		createEAttribute(generatorParameterEClass, GENERATOR_PARAMETER__DEFAULT_VALUE);
+
+		// Create enums
+		typeEEnum = createEEnum(TYPE);
 
 		// Create data types
 		collectionEDataType = createEDataType(COLLECTION);
@@ -440,6 +557,8 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		initEAttribute(getValueGenerator_Description(), ecorePackage.getEString(), "description", null, 0, 1, ValueGenerator.class, IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_ID(), ecorePackage.getEString(), "ID", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_Locale(), this.getLocale(), "locale", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getValueGenerator_ValueType(), this.getType(), "valueType", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValueGenerator_Parameters(), this.getGeneratorParameter(), null, "parameters", null, 0, -1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		EOperation op = initEOperation(getValueGenerator__GenerateValue(), null, "generateValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(valueGeneratorEClass_T);
@@ -465,6 +584,23 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		g2 = createEGenericType(referenceGeneratorEClass_T);
 		g1.getETypeArguments().add(g2);
 		initEAttribute(getReferenceGenerator_Values(), g1, "values", null, 0, 1, ReferenceGenerator.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(generatorParameterEClass, GeneratorParameter.class, "GeneratorParameter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getGeneratorParameter_Name(), ecorePackage.getEString(), "name", null, 0, 1, GeneratorParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGeneratorParameter_Type(), this.getType(), "type", null, 0, 1, GeneratorParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGeneratorParameter_DefaultValue(), ecorePackage.getEString(), "defaultValue", null, 0, 1, GeneratorParameter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(typeEEnum, Type.class, "Type");
+		addEEnumLiteral(typeEEnum, Type.UNDEFINED);
+		addEEnumLiteral(typeEEnum, Type.INT);
+		addEEnumLiteral(typeEEnum, Type.LONG);
+		addEEnumLiteral(typeEEnum, Type.FLOAT);
+		addEEnumLiteral(typeEEnum, Type.DOUBLE);
+		addEEnumLiteral(typeEEnum, Type.BOOLEAN);
+		addEEnumLiteral(typeEEnum, Type.DATE);
+		addEEnumLiteral(typeEEnum, Type.STRING);
+		addEEnumLiteral(typeEEnum, Type.OBJECT);
 
 		// Initialize data types
 		initEDataType(collectionEDataType, Collection.class, "Collection", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);

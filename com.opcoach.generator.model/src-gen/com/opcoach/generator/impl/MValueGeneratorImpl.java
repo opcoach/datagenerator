@@ -2,16 +2,21 @@
  */
 package com.opcoach.generator.impl;
 
+import com.opcoach.generator.GeneratorParameter;
 import com.opcoach.generator.MGeneratorPackage;
+import com.opcoach.generator.Type;
 import com.opcoach.generator.ValueGenerator;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Collection;
 import java.util.Locale;
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 
 /**
@@ -29,6 +34,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getLocale <em>Locale</em>}</li>
+ *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getValueType <em>Value Type</em>}</li>
+ *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getParametersList <em>Parameters</em>}</li>
  * </ul>
  *
  * @generated
@@ -165,6 +172,46 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	protected Locale locale = LOCALE_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Type VALUE_TYPE_EDEFAULT = Type.UNDEFINED;
+
+	/**
+	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
+	protected Type valueType = VALUE_TYPE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getParametersList() <em>Parameters</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getParametersList()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<GeneratorParameter> parameters;
+
+	/**
+	 * The empty value for the '{@link #getParameters() <em>Parameters</em>}' array accessor.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getParameters()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final GeneratorParameter[] PARAMETERS_EEMPTY_ARRAY = new GeneratorParameter [0];
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -190,6 +237,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getBadValueProportion()
 	{
 		return badValueProportion;
@@ -200,6 +248,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBadValueProportion(int newBadValueProportion)
 	{
 		int oldBadValueProportion = badValueProportion;
@@ -214,6 +263,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
+	@Override
 	public ValueGenerator<T> getBadValueGenerator()
 	{
 		if (badValueGenerator != null && badValueGenerator.eIsProxy()) {
@@ -242,6 +292,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBadValueGenerator(ValueGenerator<T> newBadValueGenerator)
 	{
 		ValueGenerator<T> oldBadValueGenerator = badValueGenerator;
@@ -255,6 +306,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public T getLastGeneratedValue()
 	{
 		return lastGeneratedValue;
@@ -265,6 +317,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLastGeneratedValue(T newLastGeneratedValue)
 	{
 		T oldLastGeneratedValue = lastGeneratedValue;
@@ -278,6 +331,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public long getRandomSeed()
 	{
 		return randomSeed;
@@ -288,6 +342,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRandomSeed(long newRandomSeed)
 	{
 		long oldRandomSeed = randomSeed;
@@ -303,6 +358,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void unsetRandomSeed()
 	{
 		long oldRandomSeed = randomSeed;
@@ -318,6 +374,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSetRandomSeed()
 	{
 		return randomSeedESet;
@@ -328,6 +385,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDescription()
 	{
 		return description;
@@ -338,6 +396,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getID()
 	{
 		return id;
@@ -348,6 +407,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setID(String newID)
 	{
 		String oldID = id;
@@ -361,6 +421,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Locale getLocale()
 	{
 		return locale;
@@ -371,6 +432,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLocale(Locale newLocale)
 	{
 		Locale oldLocale = locale;
@@ -384,6 +446,83 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public Type getValueType() {
+		return valueType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeneratorParameter[] getParameters() {
+		if (parameters == null || parameters.isEmpty()) return PARAMETERS_EEMPTY_ARRAY;
+		BasicEList<GeneratorParameter> list = (BasicEList<GeneratorParameter>)parameters;
+		list.shrink();
+		return (GeneratorParameter[])list.data();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeneratorParameter getParameters(int index) {
+		return getParametersList().get(index);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getParametersLength() {
+		return parameters == null ? 0 : parameters.size();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParameters(GeneratorParameter[] newParameters) {
+		((BasicEList<GeneratorParameter>)getParametersList()).setData(newParameters.length, newParameters);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParameters(int index, GeneratorParameter element) {
+		getParametersList().set(index, element);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<GeneratorParameter> getParametersList() {
+		if (parameters == null) {
+			parameters = new EObjectResolvingEList<GeneratorParameter>(GeneratorParameter.class, this, MGeneratorPackage.VALUE_GENERATOR__PARAMETERS);
+		}
+		return parameters;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public T generateValue()
 	{
 		// TODO: implement this method
@@ -415,6 +554,10 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 				return getID();
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				return getLocale();
+			case MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE:
+				return getValueType();
+			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
+				return getParametersList();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -447,6 +590,10 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				setLocale((Locale)newValue);
 				return;
+			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
+				getParametersList().clear();
+				getParametersList().addAll((Collection<? extends GeneratorParameter>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -478,6 +625,9 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				setLocale(LOCALE_EDEFAULT);
 				return;
+			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
+				getParametersList().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -505,6 +655,10 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				return LOCALE_EDEFAULT == null ? locale != null : !LOCALE_EDEFAULT.equals(locale);
+			case MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE:
+				return valueType != VALUE_TYPE_EDEFAULT;
+			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
+				return parameters != null && !parameters.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -546,6 +700,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 		result.append(id);
 		result.append(", locale: ");
 		result.append(locale);
+		result.append(", valueType: ");
+		result.append(valueType);
 		result.append(')');
 		return result.toString();
 	}

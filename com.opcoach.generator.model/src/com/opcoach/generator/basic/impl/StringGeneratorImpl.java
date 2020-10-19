@@ -12,6 +12,7 @@ import org.eclipse.core.runtime.FileLocator;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.FrameworkUtil;
 
+import com.opcoach.generator.Type;
 import com.opcoach.generator.basic.StringGenerator;
 
 // This class overrides the generated class and will be instantiated by factory
@@ -233,6 +234,11 @@ public class StringGeneratorImpl extends MStringGeneratorImpl implements StringG
 
 		}
 
+	}
+	
+	@Override
+	public Type getValueType() {
+		return Type.STRING;
 	}
 
 

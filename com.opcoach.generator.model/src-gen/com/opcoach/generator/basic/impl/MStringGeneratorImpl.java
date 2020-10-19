@@ -93,6 +93,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataFilename()
 	{
 		return dataFilename;
@@ -103,6 +104,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataFilename(String newDataFilename)
 	{
 		String oldDataFilename = dataFilename;
@@ -116,6 +118,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CasePolicyType getCasePolicy()
 	{
 		return casePolicy;
@@ -126,6 +129,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCasePolicy(CasePolicyType newCasePolicy)
 	{
 		CasePolicyType oldCasePolicy = casePolicy;

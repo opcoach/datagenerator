@@ -1,5 +1,6 @@
 package com.opcoach.generator.basic.impl;
 
+import com.opcoach.generator.Type;
 import com.opcoach.generator.basic.NullValueGenerator;
 
 // This class overrides the generated class and will be instantiated by factory
@@ -16,5 +17,10 @@ public class NullValueGeneratorImpl extends MNullValueGeneratorImpl implements N
 	protected Object generateSimpleValue()
 	{
 		return null;
+	}
+	
+	@Override
+	public Type getValueType() {
+		return Type.OBJECT;
 	}
 }

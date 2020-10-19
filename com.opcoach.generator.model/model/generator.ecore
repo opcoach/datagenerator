@@ -30,6 +30,10 @@
         changeable="false" transient="true" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="locale" eType="#//Locale"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valueType" eType="#//Type"
+        changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//GeneratorParameter"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RangeGenerator" abstract="true">
     <eTypeParameters name="T"/>
@@ -75,6 +79,22 @@
     <eTypeParameters name="T"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="Locale" instanceClassName="java.util.Locale"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeneratorParameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Type">
+    <eLiterals name="undefined" value="-1"/>
+    <eLiterals name="int"/>
+    <eLiterals name="long" value="1"/>
+    <eLiterals name="float" value="2"/>
+    <eLiterals name="double" value="3"/>
+    <eLiterals name="boolean" value="4"/>
+    <eLiterals name="date" value="5"/>
+    <eLiterals name="string" value="6"/>
+    <eLiterals name="object" value="7"/>
+  </eClassifiers>
   <eSubpackages name="basic" nsURI="http://www.opcoach.com/generator/basic/1.0" nsPrefix="genbasic">
     <eClassifiers xsi:type="ecore:EClass" name="BooleanGenerator">
       <eGenericSuperTypes eClassifier="#_vHkHcBQDEd-QiqGdp3e77Q">
