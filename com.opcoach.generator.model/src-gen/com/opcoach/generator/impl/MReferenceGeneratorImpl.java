@@ -2,12 +2,14 @@
  */
 package com.opcoach.generator.impl;
 
-import com.opcoach.generator.MGeneratorPackage;
-import com.opcoach.generator.ReferenceGenerator;
 import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import com.opcoach.generator.MGeneratorPackage;
+import com.opcoach.generator.ReferenceGenerator;
 
 
 /**

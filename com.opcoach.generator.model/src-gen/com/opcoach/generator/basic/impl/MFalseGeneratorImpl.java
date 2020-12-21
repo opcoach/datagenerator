@@ -2,9 +2,10 @@
  */
 package com.opcoach.generator.basic.impl;
 
-import com.opcoach.generator.basic.MBasicPackage;
-import com.opcoach.generator.basic.FalseGenerator;
 import org.eclipse.emf.ecore.EClass;
+
+import com.opcoach.generator.basic.FalseGenerator;
+import com.opcoach.generator.basic.MBasicPackage;
 
 
 /**

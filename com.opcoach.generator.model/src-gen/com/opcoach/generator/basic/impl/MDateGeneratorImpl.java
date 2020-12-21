@@ -2,13 +2,15 @@
  */
 package com.opcoach.generator.basic.impl;
 
-import com.opcoach.generator.basic.MBasicPackage;
-import com.opcoach.generator.basic.DateGenerator;
-import com.opcoach.generator.impl.RangeGeneratorImpl;
 import java.util.Date;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import com.opcoach.generator.basic.DateGenerator;
+import com.opcoach.generator.basic.MBasicPackage;
+import com.opcoach.generator.impl.RangeGeneratorImpl;
 
 
 /**

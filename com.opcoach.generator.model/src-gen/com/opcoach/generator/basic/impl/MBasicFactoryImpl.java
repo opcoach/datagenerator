@@ -3,15 +3,27 @@
 package com.opcoach.generator.basic.impl;
 
 import com.opcoach.generator.basic.*;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import com.opcoach.generator.basic.BooleanGenerator;
+import com.opcoach.generator.basic.CasePolicyType;
+import com.opcoach.generator.basic.DateGenerator;
+import com.opcoach.generator.basic.DoubleGenerator;
+import com.opcoach.generator.basic.FalseGenerator;
+import com.opcoach.generator.basic.FloatGenerator;
+import com.opcoach.generator.basic.IDGenerator;
+import com.opcoach.generator.basic.IntGenerator;
+import com.opcoach.generator.basic.LongGenerator;
+import com.opcoach.generator.basic.MBasicFactory;
+import com.opcoach.generator.basic.MBasicPackage;
+import com.opcoach.generator.basic.NullValueGenerator;
+import com.opcoach.generator.basic.StringGenerator;
+import com.opcoach.generator.basic.TrueGenerator;
 
 /**
  * <!-- begin-user-doc -->

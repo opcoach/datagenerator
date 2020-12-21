@@ -2,10 +2,11 @@
  */
 package com.opcoach.generator.basic.impl;
 
-import com.opcoach.generator.basic.MBasicPackage;
-import com.opcoach.generator.basic.BooleanGenerator;
-import com.opcoach.generator.impl.ValueGeneratorImpl;
 import org.eclipse.emf.ecore.EClass;
+
+import com.opcoach.generator.basic.BooleanGenerator;
+import com.opcoach.generator.basic.MBasicPackage;
+import com.opcoach.generator.impl.ValueGeneratorImpl;
 
 
 /**

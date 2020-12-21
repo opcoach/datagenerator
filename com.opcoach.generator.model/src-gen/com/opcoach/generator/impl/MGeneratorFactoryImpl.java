@@ -3,7 +3,6 @@
 package com.opcoach.generator.impl;
 
 import com.opcoach.generator.*;
-
 import java.util.Collection;
 import java.util.Locale;
 
@@ -11,10 +10,14 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import com.opcoach.generator.GeneratorParameter;
+import com.opcoach.generator.MGeneratorFactory;
+import com.opcoach.generator.MGeneratorPackage;
+import com.opcoach.generator.ReferenceGenerator;
+import com.opcoach.generator.Type;
 
 /**
  * <!-- begin-user-doc -->

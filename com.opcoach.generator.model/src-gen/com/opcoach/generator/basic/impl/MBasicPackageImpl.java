@@ -2,8 +2,15 @@
  */
 package com.opcoach.generator.basic.impl;
 
-import com.opcoach.generator.MGeneratorPackage;
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EGenericType;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import com.opcoach.generator.MGeneratorPackage;
 import com.opcoach.generator.basic.BooleanGenerator;
 import com.opcoach.generator.basic.CasePolicyType;
 import com.opcoach.generator.basic.DateGenerator;
@@ -15,30 +22,10 @@ import com.opcoach.generator.basic.IntGenerator;
 import com.opcoach.generator.basic.LongGenerator;
 import com.opcoach.generator.basic.MBasicFactory;
 import com.opcoach.generator.basic.MBasicPackage;
-import com.opcoach.generator.basic.MBooleanGenerator;
-import com.opcoach.generator.basic.MDateGenerator;
-import com.opcoach.generator.basic.MDoubleGenerator;
-import com.opcoach.generator.basic.MFalseGenerator;
-import com.opcoach.generator.basic.MFloatGenerator;
-import com.opcoach.generator.basic.MIDGenerator;
-import com.opcoach.generator.basic.MIntGenerator;
-import com.opcoach.generator.basic.MLongGenerator;
-import com.opcoach.generator.basic.MNullValueGenerator;
-import com.opcoach.generator.basic.MStringGenerator;
-import com.opcoach.generator.basic.MTrueGenerator;
-
 import com.opcoach.generator.basic.NullValueGenerator;
 import com.opcoach.generator.basic.StringGenerator;
 import com.opcoach.generator.basic.TrueGenerator;
 import com.opcoach.generator.impl.MGeneratorPackageImpl;
-
-import org.eclipse.emf.ecore.EAttribute;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EGenericType;
-import org.eclipse.emf.ecore.EPackage;
-
-import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -180,6 +167,9 @@ public class MBasicPackageImpl extends EPackageImpl implements MBasicPackage
 		MBasicPackageImpl theBasicPackage = registeredBasicPackage instanceof MBasicPackageImpl ? (MBasicPackageImpl)registeredBasicPackage : new MBasicPackageImpl();
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		EcorePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MGeneratorPackage.eNS_URI);

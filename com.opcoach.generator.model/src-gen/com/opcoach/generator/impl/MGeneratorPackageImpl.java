@@ -14,9 +14,9 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.ETypeParameter;
+import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import com.opcoach.generator.GeneratorPackage;
 import com.opcoach.generator.GeneratorParameter;
 import com.opcoach.generator.MGeneratorFactory;
 import com.opcoach.generator.MGeneratorPackage;
@@ -132,6 +132,9 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		MGeneratorPackageImpl theGeneratorPackage = registeredGeneratorPackage instanceof MGeneratorPackageImpl ? (MGeneratorPackageImpl)registeredGeneratorPackage : new MGeneratorPackageImpl();
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		EcorePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI);
@@ -522,6 +525,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 
 		// Obtain other dependent packages
 		MBasicPackage theBasicPackage = (MBasicPackage)EPackage.Registry.INSTANCE.getEPackage(MBasicPackage.eNS_URI);
+		EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
 
 		// Add subpackages
 		getESubpackages().add(theBasicPackage);
@@ -558,7 +562,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		initEAttribute(getValueGenerator_ID(), ecorePackage.getEString(), "ID", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_Locale(), this.getLocale(), "locale", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_ValueType(), this.getType(), "valueType", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getValueGenerator_Parameters(), this.getGeneratorParameter(), null, "parameters", null, 0, -1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValueGenerator_Parameters(), theEcorePackage.getEAttribute(), null, "parameters", null, 0, -1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		EOperation op = initEOperation(getValueGenerator__GenerateValue(), null, "generateValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(valueGeneratorEClass_T);

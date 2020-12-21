@@ -6,6 +6,7 @@ package com.opcoach.generator;
 import java.util.Locale;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -252,14 +253,14 @@ public interface MValueGenerator<T> extends EObject {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	GeneratorParameter[] getParameters();
+	EAttribute[] getParameters();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	GeneratorParameter getParameters(int index);
+	EAttribute getParameters(int index);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,26 +274,29 @@ public interface MValueGenerator<T> extends EObject {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	void setParameters(GeneratorParameter[] newParameters);
+	void setParameters(EAttribute[] newParameters);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	void setParameters(int index, GeneratorParameter element);
+	void setParameters(int index, EAttribute element);
 
 	/**
 	 * Returns the value of the '<em><b>Parameters</b></em>' reference list.
-	 * The list contents are of type {@link com.opcoach.generator.GeneratorParameter}.
+	 * The list contents are of type {@link org.eclipse.emf.ecore.EAttribute}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Some attributes defined in a generator can be considered as parameters (usefull for generic UIs that could expect them)
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Parameters</em>' reference list.
 	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_Parameters()
 	 * @model
 	 * @generated
 	 */
-	EList<GeneratorParameter> getParametersList();
+	EList<EAttribute> getParametersList();
 
 	/**
 	 * <!-- begin-user-doc -->

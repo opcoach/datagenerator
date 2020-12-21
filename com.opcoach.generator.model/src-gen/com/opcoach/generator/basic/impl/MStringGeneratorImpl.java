@@ -2,13 +2,14 @@
  */
 package com.opcoach.generator.basic.impl;
 
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import com.opcoach.generator.basic.CasePolicyType;
 import com.opcoach.generator.basic.MBasicPackage;
 import com.opcoach.generator.basic.StringGenerator;
 import com.opcoach.generator.impl.ReferenceGeneratorImpl;
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 
 /**

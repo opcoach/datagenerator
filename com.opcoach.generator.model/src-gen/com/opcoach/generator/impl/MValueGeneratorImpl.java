@@ -2,21 +2,23 @@
  */
 package com.opcoach.generator.impl;
 
-import com.opcoach.generator.GeneratorParameter;
-import com.opcoach.generator.MGeneratorPackage;
-import com.opcoach.generator.Type;
-import com.opcoach.generator.ValueGenerator;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 import java.util.Locale;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+import com.opcoach.generator.MGeneratorPackage;
+import com.opcoach.generator.Type;
+import com.opcoach.generator.ValueGenerator;
 
 
 /**
@@ -199,7 +201,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<GeneratorParameter> parameters;
+	protected EList<EAttribute> parameters;
 
 	/**
 	 * The empty value for the '{@link #getParameters() <em>Parameters</em>}' array accessor.
@@ -209,7 +211,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 * @ordered
 	 */
-	protected static final GeneratorParameter[] PARAMETERS_EEMPTY_ARRAY = new GeneratorParameter [0];
+	protected static final EAttribute[] PARAMETERS_EEMPTY_ARRAY = new EAttribute [0];
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -457,11 +459,11 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 */
 	@Override
-	public GeneratorParameter[] getParameters() {
+	public EAttribute[] getParameters() {
 		if (parameters == null || parameters.isEmpty()) return PARAMETERS_EEMPTY_ARRAY;
-		BasicEList<GeneratorParameter> list = (BasicEList<GeneratorParameter>)parameters;
+		BasicEList<EAttribute> list = (BasicEList<EAttribute>)parameters;
 		list.shrink();
-		return (GeneratorParameter[])list.data();
+		return (EAttribute[])list.data();
 	}
 
 	/**
@@ -470,7 +472,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 */
 	@Override
-	public GeneratorParameter getParameters(int index) {
+	public EAttribute getParameters(int index) {
 		return getParametersList().get(index);
 	}
 
@@ -490,8 +492,8 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 */
 	@Override
-	public void setParameters(GeneratorParameter[] newParameters) {
-		((BasicEList<GeneratorParameter>)getParametersList()).setData(newParameters.length, newParameters);
+	public void setParameters(EAttribute[] newParameters) {
+		((BasicEList<EAttribute>)getParametersList()).setData(newParameters.length, newParameters);
 	}
 
 	/**
@@ -500,7 +502,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 */
 	@Override
-	public void setParameters(int index, GeneratorParameter element) {
+	public void setParameters(int index, EAttribute element) {
 		getParametersList().set(index, element);
 	}
 
@@ -510,9 +512,9 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 	 * @generated
 	 */
 	@Override
-	public EList<GeneratorParameter> getParametersList() {
+	public EList<EAttribute> getParametersList() {
 		if (parameters == null) {
-			parameters = new EObjectResolvingEList<GeneratorParameter>(GeneratorParameter.class, this, MGeneratorPackage.VALUE_GENERATOR__PARAMETERS);
+			parameters = new EObjectResolvingEList<EAttribute>(EAttribute.class, this, MGeneratorPackage.VALUE_GENERATOR__PARAMETERS);
 		}
 		return parameters;
 	}
@@ -592,7 +594,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 				return;
 			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
 				getParametersList().clear();
-				getParametersList().addAll((Collection<? extends GeneratorParameter>)newValue);
+				getParametersList().addAll((Collection<? extends EAttribute>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
