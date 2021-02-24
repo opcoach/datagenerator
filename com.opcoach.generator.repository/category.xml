@@ -3,5 +3,11 @@
    <feature url="features/com.opcoach.generator.feature_1.0.0.qualifier.jar" id="com.opcoach.generator.feature" version="1.0.0.qualifier">
       <category name="com.opcoach.generator"/>
    </feature>
+   <feature id="com.opcoach.generator.feature.source">
+      <category name="com.opcoach.generator"/>
+   </feature>
+   
+   
+   
    <category-def name="com.opcoach.generator" label="generator"/>
 </site>
