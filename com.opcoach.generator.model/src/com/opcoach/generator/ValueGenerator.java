@@ -9,5 +9,5 @@ public interface ValueGenerator<T> extends MValueGenerator<T>
 	// For instance : 
 	// default public void addSomething(Something foo) {} ;
 
-	default public String[] getParameterNames() { return new String[] { "p1", "p2", "p3"}; }
+	default public String[] getConfigurableAttributeNames() { return new String[] { "p1", "p2", "p3"}; }
 }

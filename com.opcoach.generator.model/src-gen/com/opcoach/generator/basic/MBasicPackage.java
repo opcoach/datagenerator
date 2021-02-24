@@ -141,13 +141,13 @@ public interface MBasicPackage extends EPackage
 	int BOOLEAN_GENERATOR__VALUE_TYPE = MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN_GENERATOR__PARAMETERS = MGeneratorPackage.VALUE_GENERATOR__PARAMETERS;
+	int BOOLEAN_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>Boolean Generator</em>' class.
@@ -259,13 +259,13 @@ public interface MBasicPackage extends EPackage
 	int DATE_GENERATOR__VALUE_TYPE = MGeneratorPackage.RANGE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATE_GENERATOR__PARAMETERS = MGeneratorPackage.RANGE_GENERATOR__PARAMETERS;
+	int DATE_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -422,13 +422,13 @@ public interface MBasicPackage extends EPackage
 	int DOUBLE_GENERATOR__VALUE_TYPE = MGeneratorPackage.RANGE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DOUBLE_GENERATOR__PARAMETERS = MGeneratorPackage.RANGE_GENERATOR__PARAMETERS;
+	int DOUBLE_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -576,13 +576,13 @@ public interface MBasicPackage extends EPackage
 	int FLOAT_GENERATOR__VALUE_TYPE = MGeneratorPackage.RANGE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOAT_GENERATOR__PARAMETERS = MGeneratorPackage.RANGE_GENERATOR__PARAMETERS;
+	int FLOAT_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -730,13 +730,13 @@ public interface MBasicPackage extends EPackage
 	int ID_GENERATOR__VALUE_TYPE = MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ID_GENERATOR__PARAMETERS = MGeneratorPackage.VALUE_GENERATOR__PARAMETERS;
+	int ID_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Key Length</b></em>' attribute.
@@ -866,13 +866,13 @@ public interface MBasicPackage extends EPackage
 	int INT_GENERATOR__VALUE_TYPE = MGeneratorPackage.RANGE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INT_GENERATOR__PARAMETERS = MGeneratorPackage.RANGE_GENERATOR__PARAMETERS;
+	int INT_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -1020,13 +1020,13 @@ public interface MBasicPackage extends EPackage
 	int LONG_GENERATOR__VALUE_TYPE = MGeneratorPackage.RANGE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LONG_GENERATOR__PARAMETERS = MGeneratorPackage.RANGE_GENERATOR__PARAMETERS;
+	int LONG_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -1174,13 +1174,13 @@ public interface MBasicPackage extends EPackage
 	int NULL_VALUE_GENERATOR__VALUE_TYPE = MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NULL_VALUE_GENERATOR__PARAMETERS = MGeneratorPackage.VALUE_GENERATOR__PARAMETERS;
+	int NULL_VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>Null Value Generator</em>' class.
@@ -1292,13 +1292,13 @@ public interface MBasicPackage extends EPackage
 	int STRING_GENERATOR__VALUE_TYPE = MGeneratorPackage.REFERENCE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STRING_GENERATOR__PARAMETERS = MGeneratorPackage.REFERENCE_GENERATOR__PARAMETERS;
+	int STRING_GENERATOR__CONFIGURABLE_ATTRIBUTES = MGeneratorPackage.REFERENCE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Step</b></em>' attribute.
@@ -1446,13 +1446,13 @@ public interface MBasicPackage extends EPackage
 	int TRUE_GENERATOR__VALUE_TYPE = BOOLEAN_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRUE_GENERATOR__PARAMETERS = BOOLEAN_GENERATOR__PARAMETERS;
+	int TRUE_GENERATOR__CONFIGURABLE_ATTRIBUTES = BOOLEAN_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>True Generator</em>' class.
@@ -1564,13 +1564,13 @@ public interface MBasicPackage extends EPackage
 	int FALSE_GENERATOR__VALUE_TYPE = BOOLEAN_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FALSE_GENERATOR__PARAMETERS = BOOLEAN_GENERATOR__PARAMETERS;
+	int FALSE_GENERATOR__CONFIGURABLE_ATTRIBUTES = BOOLEAN_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The number of structural features of the '<em>False Generator</em>' class.

@@ -37,7 +37,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generator.ecore#//ValueGenerator/ID"/>
       <genFeatures property="None" createChild="false" ecoreFeature="ecore:EAttribute generator.ecore#//ValueGenerator/locale"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute generator.ecore#//ValueGenerator/valueType"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference generator.ecore#//ValueGenerator/parameters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference generator.ecore#//ValueGenerator/configurableAttributes"/>
       <genOperations ecoreOperation="generator.ecore#//ValueGenerator/generateValue"/>
     </genClasses>
     <genClasses ecoreClass="generator.ecore#//RangeGenerator">

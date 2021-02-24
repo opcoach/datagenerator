@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.opcoach.generator.MValueGenerator#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getLocale <em>Locale</em>}</li>
  *   <li>{@link com.opcoach.generator.MValueGenerator#getValueType <em>Value Type</em>}</li>
- *   <li>{@link com.opcoach.generator.MValueGenerator#getParametersList <em>Parameters</em>}</li>
+ *   <li>{@link com.opcoach.generator.MValueGenerator#getConfigurableAttributesList <em>Configurable Attributes</em>}</li>
  * </ul>
  *
  * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator()
@@ -253,50 +253,50 @@ public interface MValueGenerator<T> extends EObject {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	EAttribute[] getParameters();
+	EAttribute[] getConfigurableAttributes();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	EAttribute getParameters(int index);
+	EAttribute getConfigurableAttributes(int index);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	int getParametersLength();
+	int getConfigurableAttributesLength();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	void setParameters(EAttribute[] newParameters);
+	void setConfigurableAttributes(EAttribute[] newConfigurableAttributes);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	void setParameters(int index, EAttribute element);
+	void setConfigurableAttributes(int index, EAttribute element);
 
 	/**
-	 * Returns the value of the '<em><b>Parameters</b></em>' reference list.
+	 * Returns the value of the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.eclipse.emf.ecore.EAttribute}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Some attributes defined in a generator can be considered as parameters (usefull for generic UIs that could expect them)
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Parameters</em>' reference list.
-	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_Parameters()
+	 * @return the value of the '<em>Configurable Attributes</em>' reference list.
+	 * @see com.opcoach.generator.MGeneratorPackage#getValueGenerator_ConfigurableAttributes()
 	 * @model
 	 * @generated
 	 */
-	EList<EAttribute> getParametersList();
+	EList<EAttribute> getConfigurableAttributesList();
 
 	/**
 	 * <!-- begin-user-doc -->

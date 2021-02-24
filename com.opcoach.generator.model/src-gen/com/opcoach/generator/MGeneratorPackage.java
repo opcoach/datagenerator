@@ -142,13 +142,13 @@ public interface MGeneratorPackage extends EPackage
 	int VALUE_GENERATOR__VALUE_TYPE = 7;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VALUE_GENERATOR__PARAMETERS = 8;
+	int VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES = 8;
 
 	/**
 	 * The number of structural features of the '<em>Value Generator</em>' class.
@@ -260,13 +260,13 @@ public interface MGeneratorPackage extends EPackage
 	int RANGE_GENERATOR__VALUE_TYPE = VALUE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE_GENERATOR__PARAMETERS = VALUE_GENERATOR__PARAMETERS;
+	int RANGE_GENERATOR__CONFIGURABLE_ATTRIBUTES = VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Low</b></em>' attribute.
@@ -414,13 +414,13 @@ public interface MGeneratorPackage extends EPackage
 	int REFERENCE_GENERATOR__VALUE_TYPE = VALUE_GENERATOR__VALUE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Parameters</b></em>' reference list.
+	 * The feature id for the '<em><b>Configurable Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REFERENCE_GENERATOR__PARAMETERS = VALUE_GENERATOR__PARAMETERS;
+	int REFERENCE_GENERATOR__CONFIGURABLE_ATTRIBUTES = VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES;
 
 	/**
 	 * The feature id for the '<em><b>Step</b></em>' attribute.
@@ -652,15 +652,15 @@ public interface MGeneratorPackage extends EPackage
 	EAttribute getValueGenerator_ValueType();
 
 	/**
-	 * Returns the meta object for the reference list '{@link com.opcoach.generator.MValueGenerator#getParametersList <em>Parameters</em>}'.
+	 * Returns the meta object for the reference list '{@link com.opcoach.generator.MValueGenerator#getConfigurableAttributesList <em>Configurable Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Parameters</em>'.
-	 * @see com.opcoach.generator.MValueGenerator#getParametersList()
+	 * @return the meta object for the reference list '<em>Configurable Attributes</em>'.
+	 * @see com.opcoach.generator.MValueGenerator#getConfigurableAttributesList()
 	 * @see #getValueGenerator()
 	 * @generated
 	 */
-	EReference getValueGenerator_Parameters();
+	EReference getValueGenerator_ConfigurableAttributes();
 
 	/**
 	 * Returns the meta object for the '{@link com.opcoach.generator.MValueGenerator#generateValue() <em>Generate Value</em>}' operation.
@@ -930,12 +930,12 @@ public interface MGeneratorPackage extends EPackage
 		EAttribute VALUE_GENERATOR__VALUE_TYPE = eINSTANCE.getValueGenerator_ValueType();
 
 		/**
-		 * The meta object literal for the '<em><b>Parameters</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Configurable Attributes</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VALUE_GENERATOR__PARAMETERS = eINSTANCE.getValueGenerator_Parameters();
+		EReference VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES = eINSTANCE.getValueGenerator_ConfigurableAttributes();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Value</b></em>' operation.

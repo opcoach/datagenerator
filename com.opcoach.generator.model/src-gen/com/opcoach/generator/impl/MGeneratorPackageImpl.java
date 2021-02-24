@@ -260,7 +260,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 	 * @generated
 	 */
 	@Override
-	public EReference getValueGenerator_Parameters() {
+	public EReference getValueGenerator_ConfigurableAttributes() {
 		return (EReference)valueGeneratorEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -473,7 +473,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__ID);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__LOCALE);
 		createEAttribute(valueGeneratorEClass, VALUE_GENERATOR__VALUE_TYPE);
-		createEReference(valueGeneratorEClass, VALUE_GENERATOR__PARAMETERS);
+		createEReference(valueGeneratorEClass, VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES);
 		createEOperation(valueGeneratorEClass, VALUE_GENERATOR___GENERATE_VALUE);
 
 		rangeGeneratorEClass = createEClass(RANGE_GENERATOR);
@@ -562,7 +562,7 @@ public class MGeneratorPackageImpl extends EPackageImpl implements MGeneratorPac
 		initEAttribute(getValueGenerator_ID(), ecorePackage.getEString(), "ID", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_Locale(), this.getLocale(), "locale", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValueGenerator_ValueType(), this.getType(), "valueType", null, 0, 1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getValueGenerator_Parameters(), theEcorePackage.getEAttribute(), null, "parameters", null, 0, -1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValueGenerator_ConfigurableAttributes(), theEcorePackage.getEAttribute(), null, "configurableAttributes", null, 0, -1, ValueGenerator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		EOperation op = initEOperation(getValueGenerator__GenerateValue(), null, "generateValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(valueGeneratorEClass_T);

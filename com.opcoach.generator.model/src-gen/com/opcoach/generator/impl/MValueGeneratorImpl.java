@@ -37,7 +37,7 @@ import com.opcoach.generator.ValueGenerator;
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getID <em>ID</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getLocale <em>Locale</em>}</li>
  *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getValueType <em>Value Type</em>}</li>
- *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getParametersList <em>Parameters</em>}</li>
+ *   <li>{@link com.opcoach.generator.impl.MValueGeneratorImpl#getConfigurableAttributesList <em>Configurable Attributes</em>}</li>
  * </ul>
  *
  * @generated
@@ -194,24 +194,24 @@ import com.opcoach.generator.ValueGenerator;
 	protected Type valueType = VALUE_TYPE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getParametersList() <em>Parameters</em>}' reference list.
+	 * The cached value of the '{@link #getConfigurableAttributesList() <em>Configurable Attributes</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getParametersList()
+	 * @see #getConfigurableAttributesList()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<EAttribute> parameters;
+	protected EList<EAttribute> configurableAttributes;
 
 	/**
-	 * The empty value for the '{@link #getParameters() <em>Parameters</em>}' array accessor.
+	 * The empty value for the '{@link #getConfigurableAttributes() <em>Configurable Attributes</em>}' array accessor.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getParameters()
+	 * @see #getConfigurableAttributes()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final EAttribute[] PARAMETERS_EEMPTY_ARRAY = new EAttribute [0];
+	protected static final EAttribute[] CONFIGURABLE_ATTRIBUTES_EEMPTY_ARRAY = new EAttribute [0];
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -459,9 +459,9 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public EAttribute[] getParameters() {
-		if (parameters == null || parameters.isEmpty()) return PARAMETERS_EEMPTY_ARRAY;
-		BasicEList<EAttribute> list = (BasicEList<EAttribute>)parameters;
+	public EAttribute[] getConfigurableAttributes() {
+		if (configurableAttributes == null || configurableAttributes.isEmpty()) return CONFIGURABLE_ATTRIBUTES_EEMPTY_ARRAY;
+		BasicEList<EAttribute> list = (BasicEList<EAttribute>)configurableAttributes;
 		list.shrink();
 		return (EAttribute[])list.data();
 	}
@@ -472,8 +472,8 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public EAttribute getParameters(int index) {
-		return getParametersList().get(index);
+	public EAttribute getConfigurableAttributes(int index) {
+		return getConfigurableAttributesList().get(index);
 	}
 
 	/**
@@ -482,8 +482,8 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public int getParametersLength() {
-		return parameters == null ? 0 : parameters.size();
+	public int getConfigurableAttributesLength() {
+		return configurableAttributes == null ? 0 : configurableAttributes.size();
 	}
 
 	/**
@@ -492,8 +492,8 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public void setParameters(EAttribute[] newParameters) {
-		((BasicEList<EAttribute>)getParametersList()).setData(newParameters.length, newParameters);
+	public void setConfigurableAttributes(EAttribute[] newConfigurableAttributes) {
+		((BasicEList<EAttribute>)getConfigurableAttributesList()).setData(newConfigurableAttributes.length, newConfigurableAttributes);
 	}
 
 	/**
@@ -502,8 +502,8 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public void setParameters(int index, EAttribute element) {
-		getParametersList().set(index, element);
+	public void setConfigurableAttributes(int index, EAttribute element) {
+		getConfigurableAttributesList().set(index, element);
 	}
 
 	/**
@@ -512,11 +512,11 @@ import com.opcoach.generator.ValueGenerator;
 	 * @generated
 	 */
 	@Override
-	public EList<EAttribute> getParametersList() {
-		if (parameters == null) {
-			parameters = new EObjectResolvingEList<EAttribute>(EAttribute.class, this, MGeneratorPackage.VALUE_GENERATOR__PARAMETERS);
+	public EList<EAttribute> getConfigurableAttributesList() {
+		if (configurableAttributes == null) {
+			configurableAttributes = new EObjectResolvingEList<EAttribute>(EAttribute.class, this, MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES);
 		}
-		return parameters;
+		return configurableAttributes;
 	}
 
 	/**
@@ -558,8 +558,8 @@ import com.opcoach.generator.ValueGenerator;
 				return getLocale();
 			case MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE:
 				return getValueType();
-			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
-				return getParametersList();
+			case MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES:
+				return getConfigurableAttributesList();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -592,9 +592,9 @@ import com.opcoach.generator.ValueGenerator;
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				setLocale((Locale)newValue);
 				return;
-			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
-				getParametersList().clear();
-				getParametersList().addAll((Collection<? extends EAttribute>)newValue);
+			case MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES:
+				getConfigurableAttributesList().clear();
+				getConfigurableAttributesList().addAll((Collection<? extends EAttribute>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -627,8 +627,8 @@ import com.opcoach.generator.ValueGenerator;
 			case MGeneratorPackage.VALUE_GENERATOR__LOCALE:
 				setLocale(LOCALE_EDEFAULT);
 				return;
-			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
-				getParametersList().clear();
+			case MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES:
+				getConfigurableAttributesList().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -659,8 +659,8 @@ import com.opcoach.generator.ValueGenerator;
 				return LOCALE_EDEFAULT == null ? locale != null : !LOCALE_EDEFAULT.equals(locale);
 			case MGeneratorPackage.VALUE_GENERATOR__VALUE_TYPE:
 				return valueType != VALUE_TYPE_EDEFAULT;
-			case MGeneratorPackage.VALUE_GENERATOR__PARAMETERS:
-				return parameters != null && !parameters.isEmpty();
+			case MGeneratorPackage.VALUE_GENERATOR__CONFIGURABLE_ATTRIBUTES:
+				return configurableAttributes != null && !configurableAttributes.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
