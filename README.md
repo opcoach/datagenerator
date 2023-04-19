@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opcoach/datagenerator.svg?branch=master)](https://travis-ci.org/opcoach/datagenerator)
+![Build Status](https://github.com/opcoach/datagenerator/actions/workflows/maven.yml/badge.svg)
 
 # datagenerator
 A project to generate data of several types
